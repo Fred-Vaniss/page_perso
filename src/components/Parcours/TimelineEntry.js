@@ -49,15 +49,16 @@ export default class TimelineEntry extends Component {
 				<div class="work-category">
 					{this.state.category}
 				</div>
-				
-				<div class="work-meta">
-					<div class="title">{this.props.title}</div>
-					<div class="time">{this.props.time}</div>
-				</div>
 				<div class="work-place">
 					<h3>{this.props.entreprise}</h3>
 					<div class="location"><FontAwesomeIcon icon={faMapMarkerAlt}/> {this.props.place}</div>
 				</div>
+
+				<div class="work-meta">
+					<div class="title">{this.props.title}</div>
+					<div class="time">{this.props.time}</div>
+				</div>
+
 				<div class="desc">
 					<p>{this.props.desc}</p>
 					{this.state.list}
