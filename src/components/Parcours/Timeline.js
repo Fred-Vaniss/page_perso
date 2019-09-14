@@ -5,7 +5,7 @@ export default class Timeline extends Component {
 	render() {
 		return (
 			<section class="experience">
-				<h2>Formations & expérience professionnel</h2>
+				<h2>Parcours</h2>
 				<div class="timeline">
 					<TimelineEntry
 						type="formation"

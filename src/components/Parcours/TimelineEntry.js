@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
 
 export default class TimelineEntry extends Component {
 	render() {
@@ -10,7 +12,7 @@ export default class TimelineEntry extends Component {
 				</div>
 				<div class="work-place">
 					<h3>BeCode</h3>
-					<div class="location"><i class="fas fa-map-marker-alt"></i>{this.props.place}</div>
+					<div class="location"><FontAwesomeIcon icon={faMapMarkerAlt}/> {this.props.place}</div>
 				</div>
 				<div class="desc">
 					<p>{this.props.desc}</p>
