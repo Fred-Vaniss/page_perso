@@ -6,13 +6,7 @@ export default class Timeline extends Component {
 		const listTimeline = TimelineList.map(item => {
 			return(
 				<TimelineEntry
-					type={item.type}
-					title={item.title}
-					time={item.time}
-					entreprise={item.entreprise}
-					place={item.place}
-					desc={item.desc}
-					list={item.list}
+					item={item}
 				/>
 			)
 		})
