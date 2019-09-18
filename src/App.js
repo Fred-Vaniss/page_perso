@@ -1,11 +1,13 @@
 import React from 'react';
-import { Timeline } from './components';
+import { Intro, About, Timeline } from './components';
 
 function App() {
   return (
     <div class="wrapper">
-      <h1>Hey</h1>
+      <Intro/>
+      <About/>
       <Timeline/>
+
     </div>
   );
 } 
