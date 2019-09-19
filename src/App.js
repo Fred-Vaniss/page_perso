@@ -1,9 +1,9 @@
 import React from 'react';
-import { Intro, About, Timeline } from './components';
+import { Intro, About, Timeline} from './components';
 
 function App() {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <Intro/>
       <About/>
       <Timeline/>

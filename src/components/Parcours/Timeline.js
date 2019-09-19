@@ -7,14 +7,15 @@ export default class Timeline extends Component {
 			return(
 				<TimelineEntry
 					item={item}
+					key={item.id}
 				/>
 			)
 		})
 
 		return (
-			<section class="experience">
+			<section className="experience">
 				<h2>Parcours</h2>
-				<div class="timeline">
+				<div className="timeline">
 					{listTimeline}
 				</div>
 			</section>

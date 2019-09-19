@@ -7,8 +7,8 @@ export default class TimelineEntry extends Component {
 	render() {
 		const { item } = this.props
 
-		return <div class="timeline-entry">
-				<div class="work-category">
+		return <div className="timeline-entry">
+				<div className="work-category">
 					{{	//? Equivalent d'un switch
 						formation:
 							<FontAwesomeIcon icon={faBook}/>,
@@ -18,17 +18,17 @@ export default class TimelineEntry extends Component {
 							<FontAwesomeIcon icon={faGraduationCap}/>
 					}[item.type]}
 				</div>
-				<div class="work-place">
+				<div className="work-place">
 					<h3>{item.entreprise}</h3>
-					<div class="location"><FontAwesomeIcon icon={faMapMarkerAlt}/> {item.place}</div>
+					<div className="location"><FontAwesomeIcon icon={faMapMarkerAlt}/> {item.place}</div>
 				</div>
 
-				<div class="work-meta">
-					<div class="title">{item.title}</div>
-					<div class="time">{item.time}</div>
+				<div className="work-meta">
+					<div className="title">{item.title}</div>
+					<div className="time">{item.time}</div>
 				</div>
 
-				<div class="desc">
+				<div className="desc">
 					<p>{item.desc}</p>
 					{
 						item.list.length && 
