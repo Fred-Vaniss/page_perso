@@ -7,12 +7,14 @@ export default class Skills extends Component {
 			return(
 				<SkillEntry
 					item={item}
+					key={item.id}
 				/>
 			)
 		})
 
 		return (
 			<section className="skills">
+				<h2>Mes compétences</h2>
 				{ listSkills }
 			</section>
 		)
