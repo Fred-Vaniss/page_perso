@@ -3,11 +3,12 @@ import { SkillEntry, SkillsList } from '..'
 
 export default class Skills extends Component {
 	render() {
-		const listSkills = SkillsList.map(item => {
+		const listSkills = SkillsList.map((item, index = 0) => {
+			index++
 			return(
 				<SkillEntry
 					item={item}
-					key={item.id}
+					key={index}
 				/>
 			)
 		})
