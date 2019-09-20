@@ -21,6 +21,47 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 }
 
 //?
+//? Compétences
+//?////////////////////////////
+
+.skill-icon{
+	height: 140px; width: 140px;
+}
+
+.skill-icon-sub{
+	height: 70px; width: 70px;
+}
+
+.skills-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.sub-skills{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: -25px; left: -25px;
+	width: 190px; height: 0;
+}
+
+.skill-entry{
+	position: relative;
+	margin: 10px 30px; 
+	img{
+		transition: transform 0.3s ease-out;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+
+
+
+
+
+//?
 //? Parcours
 //?/////////////////////////////
 

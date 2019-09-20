@@ -16,7 +16,9 @@ export default class Skills extends Component {
 		return (
 			<section className="skills">
 				<h2>Mes compétences</h2>
-				{ listSkills }
+				<div className="skills-flex">
+					{ listSkills }
+				</div>
 			</section>
 		)
 	}
