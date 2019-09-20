@@ -1,6 +1,5 @@
 export const TimelineList = [
 	{
-		id: 0,
 		type:"formation",
 		title:"Formation développeur web",
 		time:"avril - octobre 2019",
@@ -10,7 +9,6 @@ export const TimelineList = [
 		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL"]
 	},
 	{
-		id: 1,
 		type:"formation",
 		title:"Formation UX Webdesign",
 		time:"octobre 2018 - février 2019",
@@ -20,7 +18,6 @@ export const TimelineList = [
 		list:["HTML & CSS & SASS", "JavaScript"]
 	},
 	{
-		id: 2,
 		type:"entreprise",
 		title:"Stage infographie",
 		time:"mai - juin 2016",
@@ -30,7 +27,6 @@ export const TimelineList = [
 		list:["Création d'affiche et carte de visite", "Mise en page de flyers", "Création de logo", "Montage vidéo"]
 	},
 	{
-		id: 3,
 		type:"graduation",
 		title:"Bachelier en infographie",
 		time:"2012 - 2017",

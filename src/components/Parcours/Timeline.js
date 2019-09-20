@@ -3,11 +3,12 @@ import { TimelineEntry, TimelineList } from '../'
 
 export default class Timeline extends Component {
 	render() {
-		const listTimeline = TimelineList.map(item => {
+		const listTimeline = TimelineList.map((item, index = 0) => {
+			index++
 			return(
 				<TimelineEntry
 					item={item}
-					key={item.id}
+					key={index}
 				/>
 			)
 		})
