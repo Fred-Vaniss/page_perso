@@ -5,3 +5,5 @@ export {default as About} from './About'
 export {Skills, SkillEntry, SkillsList, SubSkillEntry} from './Competences';
 
 export {Timeline, TimelineEntry, TimelineList} from './Parcours';
+
+export {Portfolio, PortfolioEntry, PortfolioList} from './Portfolio'

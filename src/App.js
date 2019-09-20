@@ -1,5 +1,5 @@
 import React from 'react';
-import { Intro, About, Timeline, Skills} from './components';
+import { Intro, About, Timeline, Skills, Portfolio} from './components';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <About/>
       <Skills/>
       <Timeline/>
+      <Portfolio/>
     </div>
   );
 } 
