@@ -14,8 +14,8 @@ export default class PortfolioEntry extends Component {
 					<h4>{item.title}</h4>
 					<p>{item.techno}</p>
 					<div class="portfolio-links">
-						<a href={item.url.git}><FontAwesomeIcon icon={faGithub}/></a>
-						<a href={item.url.preview}><FontAwesomeIcon icon={faGlobe}/></a>
+						<a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+						<a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGlobe}/></a>
 					</div>
 				</div>
 				<img src={img} alt={item.title}/>
