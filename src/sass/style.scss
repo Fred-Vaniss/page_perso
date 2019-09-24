@@ -270,4 +270,53 @@ input, textarea{
 	border-color: red;
 }
 
+//?
+//? Footer
+//?////////////////////////////
+
+footer{
+	background-color: #F1F2F2;
+
+	width: 100vw;
+	padding: 20px 0 10px 0;
+
+	img{
+		height: 52px;
+	}
+
+	.wrapper{
+		display:flex;
+
+		justify-content: space-between;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-decoration: none;
+				width: 40px; height: 40px;
+				margin-left: .2em;
+
+				border-radius: 50%;
+				font-size: 2em;
+				color: white;
+				background-color: #2098D1;
+				padding: 0.3em;
+
+				transition: background-color 0.2s;
+				&:hover{
+					background-color: #FF8900;
+				}
+			}
+		}
+	}
+}
+
 @import '760';

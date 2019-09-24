@@ -11,7 +11,7 @@ export default class Contact extends Component {
 				phone:"",
 				msg:"",
 			},
-			errors: {},
+			validation: {},
 			labelClass: {
 				name:"",
 				mail:"",
@@ -24,13 +24,19 @@ export default class Contact extends Component {
 	handleChanges(field, e){
 		let fields = this.state.fields;
 		let labelClass = this.state.labelClass;
+		let validation = this.state.validation;
 		fields[field] = e.target.value;
 		this.setState({fields});
 
 		labelClass[field] = (e.target.value.length > 0) ? "field-fill" : "";
 			 
 		
-		console.log(e.target.value.length)
+		if (field === "name"){
+			validation[field] = (e.target.value.length > 1) ? true : false;
+		} else if (field === "mail"){
+			let regex = ""
+			validation[field] = regex.test(e.target.value)
+		}
 	}
 
 
