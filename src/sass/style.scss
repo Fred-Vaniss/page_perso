@@ -33,6 +33,11 @@ section:not(:first-child){
 	margin: 100px 0;
 }
 
+h2{
+	font-size: 2em;
+
+}
+
 
 
 //?
@@ -50,9 +55,8 @@ section:not(:first-child){
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	
-	.wrapper{
+	.fullscreen{
 		height: 100%;
-
 	}
 
 	.intro-title{
@@ -94,9 +98,6 @@ section:not(:first-child){
 	top: -40px;
 	width: 100%;
 
-	display: flex;
-	justify-content: space-between;
-
 	font-variant: small-caps;
 	font-feature-settings: normal!important;
 	font-weight: bold;
@@ -116,6 +117,27 @@ section:not(:first-child){
 			margin-left: 1.2em;
 		}
 	}
+}
+
+.nav-flex{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.sticky{
+	position: fixed;
+
+	top: 0;
+	left: 0;
+
+	height: 60px;
+
+	background-color: $blue;
+
+	padding: 20px 0;
+
+	z-index: 100;
 }
 
 .download-cv{
