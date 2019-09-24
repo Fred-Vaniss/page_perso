@@ -15,9 +15,11 @@ export default class Timeline extends Component {
 
 		return (
 			<section className="experience">
-				<h2>Parcours</h2>
-				<div className="timeline">
-					{listTimeline}
+				<div className="wrapper">
+					<h2>Parcours</h2>
+					<div className="timeline">
+						{listTimeline}
+					</div>
 				</div>
 			</section>
 		)

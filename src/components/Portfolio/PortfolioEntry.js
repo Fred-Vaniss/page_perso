@@ -10,7 +10,7 @@ export default class PortfolioEntry extends Component {
 
 		return (
 			<div className="portfolio-entry">
-				<div class="portfolio-info">
+				<div className="portfolio-info">
 					<h4>{item.title}</h4>
 					<p>{item.techno}</p>
 					<div class="portfolio-links">
