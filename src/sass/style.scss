@@ -1,5 +1,14 @@
 @import 'variables';
 
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+
 body {
 	margin: 0;
 	font-family: "Roboto", "Oxygen",
@@ -23,6 +32,101 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 section:not(:first-child){
 	margin: 100px 0;
 }
+
+
+
+//?
+//? Intro plein écran
+//?////////////////////////////
+
+.intro{
+	position: relative;
+
+	background: rgb(1,87,129);
+	background: linear-gradient(180deg, rgba(1,87,129,1) 0%, rgba(32,152,209,1) 100%);
+
+	height: 100vh;
+
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	
+	.wrapper{
+		height: 100%;
+
+	}
+
+	.intro-title{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+	h1{
+		font-size: 4em;
+		margin: .3em 0;
+	}
+	h2{
+		font-size: 2.5em;
+		font-weight: normal;
+		margin: 0;
+	}
+}
+
+.logo-container{
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%; width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		height: 410px;
+		width: 520px;
+	}
+}
+
+.nav-bar{
+	position: relative;
+	top: -40px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	font-variant: small-caps;
+	font-feature-settings: normal!important;
+	font-weight: bold;
+	font-size: 1.1em;
+
+	a{
+		color: white;
+		text-decoration: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			display: inline-block;
+			margin-left: 1.2em;
+		}
+	}
+}
+
+.download-cv{
+	background-color: $orange;
+	padding: .5em;
+	border-radius: .3em;
+
+	position: relative;
+	top: -10px;
+}
+
 
 //?
 //? Compétences
@@ -230,7 +334,7 @@ form{
 
 label{
 	font-variant: small-caps;
-	font-feature-settings: normal;
+	font-feature-settings: normal!important;
 
 	position: absolute;
 	top: 8px; left: 8px;
@@ -276,8 +380,6 @@ input, textarea{
 
 footer{
 	background-color: #F1F2F2;
-
-	width: 100vw;
 	padding: 20px 0 10px 0;
 
 	img{

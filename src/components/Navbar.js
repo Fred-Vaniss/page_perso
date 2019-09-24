@@ -3,15 +3,15 @@ import React, { Component } from 'react'
 export default class Navbar extends Component {
 	render(){
 		return(
-			<div className="navBar">
-				<a href="/">Télécharger le CV</a>
+			<div className="nav-bar">
+				<a href="/" className="download-cv">Télécharger le CV</a>
 				<nav>
 					<ul>
-						<li>A propos</li>
-						<li>Compétences</li>
-						<li>Parcours</li>
-						<li>Portfolio</li>
-						<li>Contact</li>
+						<li><a href="/">A propos</a></li>
+						<li><a href="/">Compétences</a></li>
+						<li><a href="/">Parcours</a></li>
+						<li><a href="/">Portfolio</a></li>
+						<li><a href="/">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
