@@ -215,4 +215,59 @@ section:not(:first-child){
 	}
 }
 
+//?
+//? Formulaire de contact
+//?////////////////////////////
+
+form{
+	margin-top: 2.5em;
+}
+
+.form-group{
+	margin-top: 1.4em;
+	position: relative;
+}
+
+label{
+	font-variant: small-caps;
+	font-feature-settings: normal;
+
+	position: absolute;
+	top: 8px; left: 8px;
+
+	display: inline-block;
+	transition: transform 0.1s;
+	color: rgb(109, 109, 109)
+}
+
+input, textarea{
+	font-family: "Roboto", "Oxygen",
+	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	  sans-serif;
+	font-family: roboto;
+	border: none;
+	border-bottom: 4px solid #2098D1;
+	background-color: #F1F2F2;
+
+	width: 100%;
+
+	padding: .6em;
+	
+	&:focus, &:valid{
+		outline: none;
+		+label{
+			color: black;
+		}
+	}
+}
+
+.field-fill{
+	transform: translate(-8px, -27px);
+	color: black;
+}
+
+.field-error{
+	border-color: red;
+}
+
 @import '760';
