@@ -14,7 +14,7 @@ export default class Skills extends Component {
 		})
 
 		return (
-			<section className="skills">
+			<section id="skills">
 				<div className="wrapper">
 					<h2>Mes compétences</h2>
 					<div className="skills-flex">

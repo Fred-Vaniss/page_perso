@@ -15,7 +15,7 @@ export default class Portfolio extends Component {
 		})
 
 		return (
-			<section className="portfolio">
+			<section id="portfolio">
 				<div className="wrapper">
 					<h2>Mon portfolio</h2>
 					<div className="portfolio-list">

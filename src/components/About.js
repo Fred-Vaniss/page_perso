@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class About extends Component {
 	render() {
 		return (
-			<section className="about">
+			<section id="about">
 				<div className="wrapper">
 					<h2>À propos de moi</h2>
 					<p>J’ai commencé ma carrière en tant qu’infographiste où j’ai touché un peu tous les différents outils. J’ai ensuite décidé de me spécialiser dans le développement web où j’ai commencé dans l’UX Webdesign.</p>

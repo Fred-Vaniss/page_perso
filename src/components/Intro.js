@@ -5,7 +5,7 @@ import Logo from '../assets/logo-bg.svg'
 export default class Intro extends Component {
 	render(){
 		return(
-			<section className="intro">
+			<section id="intro">
 				<div className="wrapper fullscreen">
 					<div className="logo-container">
 						<img src={Logo} alt="Logo" className="logo-big"/>

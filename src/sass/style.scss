@@ -2,6 +2,7 @@
 
 html{
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *, *:before, *:after{
@@ -44,7 +45,7 @@ h2{
 //? Intro plein écran
 //?////////////////////////////
 
-.intro{
+#intro{
 	position: relative;
 
 	background: rgb(1,87,129);
@@ -97,11 +98,45 @@ h2{
 	position: relative;
 	top: -40px;
 	width: 100%;
+}
+
+.burger-button{
+	background-color: white;
+	border: none;
+	font-size: 2em;
+	font-family: 'Roboto';
+	border-radius: .2em;
+	
+	position: relative;
+	top: -.3em;
+	left: .3em;
+}
+
+.menu-open{
+	transform: translateX(0)!important;
+}
+
+.menu{
+	padding-top: 1.5em;
 
 	font-variant: small-caps;
 	font-feature-settings: normal!important;
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1.4em;
+	text-align: right;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	height: 100vh;
+
+	background-color: $blue;
+	border-left: 2px solid white;
+
+	transform: translateX(12em);
+
+	transition: transform .5s;
 
 	a{
 		color: white;
@@ -109,20 +144,17 @@ h2{
 	}
 
 	ul {
+		font-size: 1.3em;
 		margin: 0;
 		padding: 0;
+		padding-top: 1.3em;
 		list-style: none;
 		li{
-			display: inline-block;
-			margin-left: 1.2em;
+			margin-bottom: 1em;
 		}
 	}
-}
 
-.nav-flex{
-	display: flex;
-	justify-content: space-between;
-
+	
 }
 
 .sticky{
@@ -144,9 +176,6 @@ h2{
 	background-color: $orange;
 	padding: .5em;
 	border-radius: .3em;
-
-	position: relative;
-	top: -10px;
 }
 
 
