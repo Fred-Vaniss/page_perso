@@ -121,7 +121,7 @@ h2{
 }
 
 .menu-open{
-	transform: translateX(0)!important;
+	transform: translateX(-12em)!important;
 }
 
 .menu{
@@ -134,14 +134,14 @@ h2{
 
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -12em;
 
 	height: 100vh;
 
 	background-color: $blue;
 	border-left: 2px solid white;
 
-	transform: translateX(12em);
+	transform: translateX(0em);
 
 	transition: transform .5s;
 
@@ -195,11 +195,11 @@ h2{
 }
 
 .skill-icon{
-	height: 140px; width: 140px;
+	height: 100px; width: 100px;
 }
 
 .skill-icon-sub{
-	height: 70px; width: 70px;
+	height: 50px; width: 50px;
 }
 
 .skills-flex{
@@ -213,22 +213,58 @@ h2{
 	display: flex;
 	justify-content: space-between;
 	position: absolute;
-	top: -25px; left: -25px;
-	width: 190px; height: 0;
+	top: -20px; left: -20px;
+	width: 140px; height: 0;
 }
 
 .skill-entry{
 	position: relative;
 	margin: 10px 30px; 
-	img{
+	.skill-icon, .skill-icon-sub{
 		transition: transform 0.3s ease-out;
 		&:hover{
 			transform: scale(1.1);
-		}
+			~ .skill-tooltip-bloc, ~ .skill-sub-tooltip-bloc{
+				visibility: visible;
+				opacity: 1;
+			}
+		} 
 	}
 }
 
+.skill-sub-entry{
+	position: relative;
+}
 
+
+.skill-tooltip-bloc, .skill-sub-tooltip-bloc{
+	position: absolute;
+	top: -3em; left:0;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	z-index: 2;
+
+	transition: opacity .3s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.skill-sub-tooltip-bloc{
+	top: -2.5em;
+}
+
+.skill-tooltip{
+	text-align: center;
+	background-color: rgb(82, 82, 82);
+	color: white;
+	padding: .3em .5em;
+	border-radius: .5em;
+
+	white-space: nowrap;
+}
 
 
 

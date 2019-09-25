@@ -32,15 +32,15 @@ export const SkillsList = [
 		icon: "php",
 	},
 	{
-		title: "Adobe Photoshop",
+		title: "Photoshop",
 		icon: "photoshop",
 	},
 	{
-		title: "Adobe Illustrator",
+		title: "Illustrator",
 		icon: "illustrator",
 	},
 	{
-		title: "Adobe InDesign",
+		title: "InDesign",
 		icon: "indesign",
 	}
 ]

@@ -39,9 +39,26 @@
 		}
 	}
 
+	.menu-open{
+		transform: translateX(0)!important;
+	}
+
 	.download-cv{
 		position: relative;
 		top: -10px;
+	}
+
+	.skill-icon{
+		height: 140px; width: 140px;
+	}
+	
+	.skill-icon-sub{
+		height: 70px; width: 70px;
+	}
+
+	.sub-skills{
+		top: -25px; left: -25px;
+		width: 190px; height: 0;
 	}
 	
 

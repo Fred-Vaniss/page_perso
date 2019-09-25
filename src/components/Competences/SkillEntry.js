@@ -9,8 +9,11 @@ export default class SkillEntry extends Component {
 		const img = require(`./img/${item.icon}.svg`)
 
 		return (
-			<div className="skill-entry">
+			<div className="skill-entry"> 	
 				<img src={img} alt={item.title} title={item.title} className="skill-icon"/>
+				<div className="skill-tooltip-bloc">
+					<span className="skill-tooltip">{item.title}</span>
+				</div>
 				{item.subskills && 
 					<div className="sub-skills">
 						{item.subskills.map((item, index = 0) => {
