@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Cv from '../assets/cv.pdf'
 
 export default class Navbar extends Component {
 	constructor () {
@@ -31,7 +32,7 @@ export default class Navbar extends Component {
 			<div className={(this.state.sticky) ? "nav-bar sticky" : "nav-bar"} ref="navBar">
 				<button onClick={() => this.openMenu()} className="burger-button">Menu</button>
 				<div className={`wrapper menu ${(this.state.menuOpen) ? "menu-open" : ""}`}>
-					<a href="/" className="download-cv">Télécharger le CV</a>
+					<a href={Cv} className="download-cv">Télécharger le CV</a>
 					<nav>
 						<ul>
 							<li><a href="#about">A propos</a></li>

@@ -447,6 +447,10 @@ form{
 	position: relative;
 }
 
+.form-group:last-child{
+	background-color: red;
+}
+
 label{
 	font-variant: small-caps;
 
@@ -503,6 +507,37 @@ textarea{
 
 .field-error{
 	border-bottom: 4px solid red!important;
+}
+
+.form-info{
+	font-size: .8em;
+}
+
+.contact-details{
+	margin-top: 3em;
+}
+
+.contact-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8em;
+	p{
+		margin: 0;
+	}
+}
+
+.contact-cat{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 0.5em;
+
+	background-color: $blue;
+	color: white;
+	border-radius: 50%;
+	padding: .5em;
+	height: 2em; width: 2em;
+	font-size: 1.5em;
 }
 
 //?

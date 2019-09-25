@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faMobileAlt, faHome } from "@fortawesome/free-solid-svg-icons";
 
 export default class Contact extends Component {
 	constructor (props){
@@ -83,25 +85,37 @@ export default class Contact extends Component {
 			<section id="contact">
 				<div className="wrapper">
 					<h2>Contactez-moi</h2>
-					<form action="/mailer.php" method="post">
-						<div className="form-group">
-							<input type="text" name="name" id="name" onChange={this.handleChanges.bind(this, "name")} value={this.state.fields["name"]} ref="name" required />
-							<label htmlFor="name" className={this.state.labelClass.name}>Nom et prénom</label><br/>
+					<div className="contact-group">
+						<form action="https://formstatic.dev" method="post">
+							<input type="hidden" name="$processor" value="email"/>
+							<input type="hidden" name="$to" value="fred.vaniss@gmail.com"/>
+
+							<div className="form-group">
+								<input type="text" name="name" id="name" onChange={this.handleChanges.bind(this, "name")} value={this.state.fields["name"]} ref="name" required />
+								<label htmlFor="name" className={this.state.labelClass.name}>Nom et prénom</label><br/>
+							</div>
+							<div className="form-group">
+								<input type="email" name="mail" id="mail" onChange={this.handleChanges.bind(this, "mail")} value={this.state.fields["mail"]} ref="mail" required/>
+								<label htmlFor="mail" className={this.state.labelClass.mail}>Adresse e-mail</label><br/>
+							</div>
+							<div className="form-group">
+								<input type="text" name="phone" id="phone" onChange={this.handleChanges.bind(this, "phone")} value={this.state.fields["phone"]} ref="phone" required/>
+								<label htmlFor="phone" className={this.state.labelClass.phone}>Téléphone</label><br/>
+							</div>
+							<div className="form-group" required>
+								<textarea name="msg" id="msg" onChange={this.handleChanges.bind(this, "msg")} value={this.state.fields["msg"]} ref="msg" required></textarea>
+								<label htmlFor="msg" className={this.state.labelClass.msg}>Message</label><br/>
+							</div>
+							<p className="form-info">Formulaire géré par Formstatic</p>
+							<button className="form-submit" onClick={this.validateForm.bind(this)}>Envoyer</button>
+						</form>
+						<div className="contact-details">
+							<h3>Coordonées</h3>
+							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faEnvelope}/></span> <p>fred.vaniss@gmail.com</p></div>
+							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faMobileAlt}/></span> <p>0488941849</p></div>
+							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faHome}/></span> <p>6180 Courcelles</p></div>
 						</div>
-						<div className="form-group">
-							<input type="email" name="mail" id="mail" onChange={this.handleChanges.bind(this, "mail")} value={this.state.fields["mail"]} ref="mail" required/>
-							<label htmlFor="mail" className={this.state.labelClass.mail}>Adresse e-mail</label><br/>
-						</div>
-						<div className="form-group">
-							<input type="text" name="phone" id="phone" onChange={this.handleChanges.bind(this, "phone")} value={this.state.fields["phone"]} ref="phone" required/>
-							<label htmlFor="phone" className={this.state.labelClass.phone}>Téléphone</label><br/>
-						</div>
-						<div className="form-group" required>
-							<textarea name="msg" id="msg" onChange={this.handleChanges.bind(this, "msg")} value={this.state.fields["msg"]} ref="msg" required></textarea>
-							<label htmlFor="msg" className={this.state.labelClass.msg}>Message</label><br/>
-						</div>
-						<button className="form-submit" onClick={this.validateForm.bind(this)}>Envoyer</button>
-					</form>
+					</div>
 				</div>
 			</section>
 		)
