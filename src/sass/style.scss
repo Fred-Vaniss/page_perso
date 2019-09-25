@@ -7,6 +7,7 @@ html{
 
 *, *:before, *:after{
 	box-sizing: inherit;
+	font-feature-settings: normal!important;
 }
 
 
@@ -31,12 +32,14 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 }
 
 section:not(:first-child){
-	margin: 100px 0;
+	padding: 4em 0;
 }
 
 h2{
 	font-size: 2em;
-
+	text-align: center;
+	font-variant: small-caps;
+	margin: 0 0 1em 0;
 }
 
 
@@ -70,11 +73,11 @@ h2{
 		width: 100%;
 	}
 	h1{
-		font-size: 4em;
+		font-size: 3em;
 		margin: .3em 0;
 	}
 	h2{
-		font-size: 2.5em;
+		font-size: 1.5em;
 		font-weight: normal;
 		margin: 0;
 	}
@@ -91,6 +94,7 @@ h2{
 	img{
 		height: 410px;
 		width: 520px;
+		margin: 3em;
 	}
 }
 
@@ -101,15 +105,19 @@ h2{
 }
 
 .burger-button{
-	background-color: white;
+	background-color: $orange;
+	color: white;
 	border: none;
-	font-size: 2em;
+	font-size: 1.5em;
+	font-variant: small-caps;
+
 	font-family: 'Roboto';
 	border-radius: .2em;
+	padding: .2em .6em;
 	
 	position: relative;
-	top: -.3em;
-	left: .3em;
+	top: -.4em;
+	left: .4em;
 }
 
 .menu-open{
@@ -120,7 +128,6 @@ h2{
 	padding-top: 1.5em;
 
 	font-variant: small-caps;
-	font-feature-settings: normal!important;
 	font-weight: bold;
 	font-size: 1.4em;
 	text-align: right;
@@ -183,6 +190,10 @@ h2{
 //? Compétences
 //?////////////////////////////
 
+#skills{
+	background-color: #F1F2F2;
+}
+
 .skill-icon{
 	height: 140px; width: 140px;
 }
@@ -192,6 +203,7 @@ h2{
 }
 
 .skills-flex{
+	margin-top: 4em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -297,6 +309,10 @@ h2{
 //? Portfolio
 //?////////////////////////////
 
+#portfolio{
+	background-color: #F1F2F2;
+}
+
 .portfolio-list{
 	display:flex;
 	justify-content: space-around;
@@ -385,7 +401,6 @@ form{
 
 label{
 	font-variant: small-caps;
-	font-feature-settings: normal!important;
 
 	position: absolute;
 	top: 8px; left: 8px;
@@ -435,6 +450,7 @@ footer{
 
 	img{
 		height: 52px;
+		display: none;
 	}
 
 	.wrapper{
