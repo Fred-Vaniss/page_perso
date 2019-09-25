@@ -11,11 +11,13 @@ export default class PortfolioEntry extends Component {
 		return (
 			<div className="portfolio-entry">
 				<div className="portfolio-info">
-					<h4>{item.title}</h4>
-					<p>{item.techno}</p>
-					<div className="portfolio-links">
-						<a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
-						<a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGlobe}/></a>
+					<div className="portfolio-info-container">
+						<h4>{item.title}</h4>
+						<p>{item.techno}</p>
+						<div className="portfolio-links">
+							<a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Dépot Github"><FontAwesomeIcon icon={faGithub}/></a>
+							<a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet"><FontAwesomeIcon icon={faGlobe}/></a>
+						</div>
 					</div>
 				</div>
 				<img src={img} alt={item.title}/>
