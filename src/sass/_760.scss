@@ -68,8 +68,8 @@
 	
 	.portfolio-list{
 		flex-direction: row;
-		justify-content: space-around;
-		
+		justify-content: space-evenly;
+		flex-wrap: wrap;
 	}
 
 	//?
