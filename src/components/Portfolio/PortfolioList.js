@@ -36,12 +36,12 @@ export const PortfolioList = [
 		}
 	},
 	{
-		title: "Test",
-		techno: "Test",
-		img: "mel",
+		title: "AllezCiné",
+		techno: "HTML, CSS, Javascript",
+		img: "cine",
 		url: {
-			git: "",
-			preview: "",
+			git: "https://github.com/Fred-Vaniss/site-allezcine",
+			preview: "https://fred-vaniss.github.io/site-allezcine/",
 		}
 	}
 ]

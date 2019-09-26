@@ -32,8 +32,8 @@ export const SkillsList = [
 		icon: "php",
 		subskills: [
 			{
-				title: "Wordpress",
-				icon: "html"
+				title: "WordPress",
+				icon: "wordpress"
 			}
 		]
 	},
