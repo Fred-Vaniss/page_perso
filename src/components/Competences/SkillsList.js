@@ -30,6 +30,12 @@ export const SkillsList = [
 	{
 		title: "PHP",
 		icon: "php",
+		subskills: [
+			{
+				title: "Wordpress",
+				icon: "html"
+			}
+		]
 	},
 	{
 		title: "Photoshop",

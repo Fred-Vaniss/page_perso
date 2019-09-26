@@ -25,5 +25,23 @@ export const PortfolioList = [
 			git: "https://github.com/Fred-Vaniss/jeu-pendu",
 			preview: "https://fred-vaniss.github.io/jeu-pendu/"
 		}
+	},
+	{
+		title: "Todolist",
+		techno: "ReactJS",
+		img: "todo",
+		url: {
+			git: "",
+			preview: ""
+		}
+	},
+	{
+		title: "Test",
+		techno: "Test",
+		img: "mel",
+		url: {
+			git: "",
+			preview: "",
+		}
 	}
 ]
