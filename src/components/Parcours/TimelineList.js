@@ -5,7 +5,7 @@ export const TimelineList = [
 		time:"avril - octobre 2019",
 		entreprise:"BeCode",
 		place:"Charleroi",
-		desc:"Formation intensive dans le développement front-end et back-end. On a appris différents languages de programmation ainsi que les différents frameworks et réalisé plusieurs travaux de groupe et participation aux évenements tel que les Hackathon, Coder Dojos et autres...",
+		desc:"Formation intensive dans le développement front-end et back-end. On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe et participation aux évenements tels que les Hackathon, Coder Dojos et autres...",
 		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL"]
 	},
 	{
@@ -23,8 +23,8 @@ export const TimelineList = [
 		time:"mai - juin 2016",
 		entreprise:"Artistic Studio",
 		place:"Marchienne-au-pont",
-		desc:"Stage de fin d’étude dans une entreprise de graphiste où j’ai réalisé plusieurs tâche et projets",
-		list:["Création d'affiche et carte de visite", "Mise en page de flyers", "Création de logo", "Montage vidéo"]
+		desc:"Stage de fin d’études dans une entreprise de graphiste où j’ai réalisé plusieurs tâches et projets",
+		list:["Création d'affiche et carte de visite", "Mise en page de flyers", "Création de logos", "Montage vidéo"]
 	},
 	{
 		type:"graduation",

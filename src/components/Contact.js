@@ -110,7 +110,7 @@ export default class Contact extends Component {
 							<button className="form-submit" onClick={this.validateForm.bind(this)}>Envoyer</button>
 						</form>
 						<div className="contact-details">
-							<h3>Coordonées</h3>
+							<h3>Coordonnées</h3>
 							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faEnvelope}/></span> <p>fred.vaniss@gmail.com</p></div>
 							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faMobileAlt}/></span> <p>0488/94.18.49</p></div>
 							<div className="contact-item"><span className="contact-cat"><FontAwesomeIcon icon={faHome}/></span> <p>6180 Courcelles</p></div>
