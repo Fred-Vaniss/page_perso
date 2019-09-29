@@ -48,7 +48,7 @@ export default class Contact extends Component {
 			const regex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 			validation[field] = regex.test(e.target.value);
 		} else {
-			validation[field] = (e.target.value.length > 10) ? true : false;
+			validation[field] = (e.target.value.length > 5) ? true : false;
 		}
 
 		console.table(validation);

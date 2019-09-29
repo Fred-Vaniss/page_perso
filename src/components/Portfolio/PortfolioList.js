@@ -31,8 +31,8 @@ export const PortfolioList = [
 		techno: "ReactJS",
 		img: "todo",
 		url: {
-			git: "",
-			preview: ""
+			git: "https://github.com/Fred-Vaniss/react-todo-list",
+			preview: "https://todolist-fred-vaniss.netlify.com/"
 		}
 	},
 	{
