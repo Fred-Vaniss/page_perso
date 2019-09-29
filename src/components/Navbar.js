@@ -35,7 +35,7 @@ export default class Navbar extends Component {
 					<a href={Cv} className="download-cv">Télécharger le CV</a>
 					<nav>
 						<ul>
-							<li><a href="#about">A propos</a></li>
+							<li><a href="#about">À propos</a></li>
 							<li><a href="#skills">Compétences</a></li>
 							<li><a href="#experience">Parcours</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>

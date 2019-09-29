@@ -6,7 +6,7 @@ export default class SubCompetence extends Component {
 		const img = require(`./img/${item.icon}.svg`)
 		
 		return <div className="skill-sub-entry">
-			<img src={img} alt={item.title} title={item.title} className="skill-icon-sub"/>
+			<img src={img} alt={item.title} className="skill-icon-sub"/>
 			<div className="skill-sub-tooltip-bloc">
 				<span className="skill-tooltip">{item.title}</span>
 			</div>

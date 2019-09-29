@@ -10,7 +10,7 @@ export default class SkillEntry extends Component {
 
 		return (
 			<div className="skill-entry"> 	
-				<img src={img} alt={item.title} title={item.title} className="skill-icon"/>
+				<img src={img} alt={item.title} className="skill-icon"/>
 				<div className="skill-tooltip-bloc">
 					<span className="skill-tooltip">{item.title}</span>
 				</div>
