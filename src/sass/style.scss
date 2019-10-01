@@ -112,16 +112,37 @@ h2{
 	font-variant: small-caps;
 
 	font-family: 'Roboto';
-	border-radius: .2em;
+	font-weight: 700;
+	font-variant: small-caps;
+	border-radius: .3em;
 	padding: .2em .6em;
 	
 	position: relative;
 	top: -.4em;
 	left: .4em;
+
+	z-index: 81;
 }
 
 .menu-open{
 	transform: translateX(-12em)!important;
+}
+
+.menu-dim{
+	position: fixed;
+	top: 0; left: 0;
+	height: 100vh; width: 100vw;
+	background-color: black;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s;
+	z-index: 80;
+}
+
+.dimmer{
+	opacity: .6;
+	display: block;
+	visibility: visible;
 }
 
 .menu{
@@ -177,7 +198,7 @@ h2{
 
 	padding: 20px 0;
 
-	z-index: 100;
+	z-index: 90;
 }
 
 .download-cv{
