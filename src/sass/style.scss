@@ -519,6 +519,7 @@ textarea{
 }
 
 .form-submit{
+	margin: 1em 0;
 	background: $blue;
 	border-radius: .25em;
 	padding: .2em .4em;
@@ -540,8 +541,15 @@ textarea{
 }
 
 .form-info{
-	font-size: .8em;
-	font-style: italic;
+	font-weight: bold;
+}
+
+.form-success{
+	color: #009600;
+}
+
+.form-error{
+	color: red;
 }
 
 .contact-details{

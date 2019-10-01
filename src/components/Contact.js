@@ -25,6 +25,10 @@ export default class Contact extends Component {
 				phone:"",
 				msg:"",
 			},
+			requestResult: {
+				success: '',
+				message: ''
+			}
 		}
 	}
 
@@ -75,6 +79,7 @@ export default class Contact extends Component {
 	}
 
 	validateForm(e){
+		e.preventDefault()
 		let allValid = true;
 		
 		const forms = {
@@ -97,8 +102,58 @@ export default class Contact extends Component {
 			}
 		}
 
-		if (!allValid) {e.preventDefault();}
+		if (allValid) {
+			this.sendMessage()
+		} else {
+			this.setState({requestResult:{message: "Un des champs n'est pas correctement remplie"}})
+		}
 	}
+
+	sendMessage(){
+		const data = {
+			'name': this.state.fields['name'],
+			'mail': this.state.fields['mail'],
+			'phone': this.state.fields['phone'],
+			'msg': this.state.fields['msg']
+		}
+
+		const req = new XMLHttpRequest();
+		
+		req.open('post', 'http://fred-vaniss.tk/mailer/mailer.php', true);
+		req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		req.send('data='+JSON.stringify(data))
+
+		req.onreadystatechange = () => {
+			if(req.readyState === XMLHttpRequest.DONE){
+				try{
+					const response = JSON.parse(req.responseText);
+					this.setState({
+						requestResult:{
+							success: response.success,
+							message: response.message
+						},
+						fields: {
+							name:"",
+							mail:"",
+							phone:"",
+							msg:"",
+						}
+					})
+				} catch {
+					const message = `Une erreur est survenue, veuillez réessayer plus tard ou contactez-moi par mail. <br/> <br/> <div style='color: black;'> Erreur: ${req.responseText}</div>`
+
+					this.setState({
+						requestResult:{
+							success: false,
+							message: message
+						}
+					})
+				}
+			}
+		}
+	}
+
+
 
 	render() {
 		return (
@@ -108,10 +163,7 @@ export default class Contact extends Component {
 					<p>Ma formation se termine fin octobre et je suis activement à la recherche d'un stage. Si vous êtes intéressé, vous pouvez me contacter pour me proposer un stage.</p>
 					<p>Je suis aussi ouvert aux propositions d'emploi.</p>
 					<div className="contact-group">
-						<form action="https://formstatic.dev" method="post">
-							<input type="hidden" name="$processor" value="email"/>
-							<input type="hidden" name="$to" value="fred.vaniss@gmail.com"/>
-
+						<form>
 							<div className="form-group">
 								<input type="text" name="name" id="name" onChange={this.handleChanges.bind(this, "name")} onBlur={this.formIndicator.bind(this)} value={this.state.fields["name"]} ref="name" required />
 								<label htmlFor="name" className={this.state.labelClass.name}>Nom et prénom</label><br/>
@@ -128,8 +180,8 @@ export default class Contact extends Component {
 								<textarea name="msg" id="msg" onChange={this.handleChanges.bind(this, "msg")} onBlur={this.formIndicator.bind(this)} value={this.state.fields["msg"]} ref="msg" required></textarea>
 								<label htmlFor="msg" className={this.state.labelClass.msg}>Message</label><br/>
 							</div>
-							<p className="form-info">Envoie du formulaire géré par <a href="https://formstatic.dev/">Formstatic</a></p>
 							<button className="form-submit" onClick={this.validateForm.bind(this)}>Envoyer</button>
+							<div className={(this.state.requestResult.success) ? 'form-info form-success' : 'form-info form-error'} dangerouslySetInnerHTML={{__html: this.state.requestResult.message}}/>
 						</form>
 						<div className="contact-details">
 							<h3>Coordonnées</h3>
