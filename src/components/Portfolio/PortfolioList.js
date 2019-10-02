@@ -43,5 +43,13 @@ export const PortfolioList = [
 			git: "https://github.com/Fred-Vaniss/site-allezcine",
 			preview: "https://fred-vaniss.github.io/site-allezcine/",
 		}
+	},
+	{
+		title: "Ce site web",
+		techno: "ReactJS, SASS",
+		img: "fred",
+		url: {
+			git: "https://github.com/Fred-Vaniss/page_perso"
+		}
 	}
 ]

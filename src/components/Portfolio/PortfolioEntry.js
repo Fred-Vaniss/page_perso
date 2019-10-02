@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export default class PortfolioEntry extends Component {
 	render() {
 		const { item } = this.props
-		const img = require(`./img/${item.img}.png`)
+		const img = require(`./img/${item.img}.jpg`)
 
 		return (
 			<div className="portfolio-entry">
@@ -16,7 +16,7 @@ export default class PortfolioEntry extends Component {
 						<p>{item.techno}</p>
 						<div className="portfolio-links">
 							<a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Dépot Github"><FontAwesomeIcon icon={faGithub}/></a>
-							<a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet"><FontAwesomeIcon icon={faGlobe}/></a>
+							{item.url.preview && <a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet"><FontAwesomeIcon icon={faGlobe}/></a>}
 						</div>
 					</div>
 				</div>
