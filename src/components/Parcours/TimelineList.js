@@ -5,8 +5,8 @@ export const TimelineList = [
 		time:"avril - octobre 2019",
 		entreprise:"BeCode",
 		place:"Charleroi",
-		desc:"Formation intensive dans le développement front-end et back-end. On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe et participation aux évenements tels que les Hackathon, Coder Dojos et autres...",
-		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL"]
+		desc:"Formation intensive dans le développement front-end et back-end. On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe, participés aux événements tels que les Hackathons, Coder Dojos et autres...",
+		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL & Wordpress"]
 	},
 	{
 		type:"formation",
@@ -15,7 +15,7 @@ export const TimelineList = [
 		entreprise:"Technocité",
 		place:"Hornu",
 		desc:"Formation dans le design et intégration de site web en prenant compte de l’expérience utilisateur. ",
-		list:["HTML & CSS & SASS", "JavaScript"]
+		list:["HTML & CSS & SASS", "JavaScript", "Conception et intégration de sites web", "Méthode agile", "Responsive webdesign"]
 	},
 	{
 		type:"entreprise",
