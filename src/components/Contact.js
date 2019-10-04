@@ -120,7 +120,7 @@ export default class Contact extends Component {
 
 		const req = new XMLHttpRequest();
 		
-		req.open('post', 'http://fred-vaniss.tk/mailer/mailer.php', true);
+		req.open('post', 'http://fred-vaniss.be/mailer/mailer.php', true);
 		req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 		req.send('data='+JSON.stringify(data))
 
