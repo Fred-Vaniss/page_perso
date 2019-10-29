@@ -1,5 +1,14 @@
 export const TimelineList = [
 	{
+		type:"entreprise",
+		title:"Stage développeur web",
+		time:"novembre 2019 - janvier 2020",
+		entreprise:"Adevo Solutions",
+		place:"Gilly",
+		desc:"Stage de fin de formation dans une agence créative et marketing.",
+		list:["HTML & CSS", "JavaScript", "PHP"]
+	},
+	{
 		type:"formation",
 		title:"Formation développeur web",
 		time:"avril - octobre 2019",
@@ -23,7 +32,7 @@ export const TimelineList = [
 		time:"mai - juin 2016",
 		entreprise:"Artistic Studio",
 		place:"Marchienne-au-pont",
-		desc:"Stage de fin d’études dans une entreprise de graphiste où j’ai réalisé plusieurs tâches et projets",
+		desc:"Stage de fin d’études dans une entreprise de graphiste où j’ai réalisé plusieurs tâches et projets.",
 		list:["Création d'affiche et carte de visite", "Mise en page de flyers", "Création de logos", "Montage vidéo"]
 	},
 	{
@@ -32,7 +41,6 @@ export const TimelineList = [
 		time:"2012 - 2017",
 		entreprise:"ISIPS",
 		place:"Charleroi",
-		desc:"Bachelier de trois ans dans tous les horizons différents de l'infographie",
-		list:['Adobe Photoshop, Illustrator & InDesign', 'HTML & CSS', 'After Effect', 'Blender']
+		desc:"Bachelier de trois ans dans tous les horizons différents de l'infographie",list:['Adobe Photoshop, Illustrator & InDesign', 'HTML & CSS', 'After Effect', 'Blender']
 	}
 ]
