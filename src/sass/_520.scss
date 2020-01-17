@@ -1,0 +1,12 @@
+@media screen and (min-width: 520px){
+	.portfolio-list{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.portfolio-entry{
+		width: 45%;
+		padding-top: 25.25%;
+	}
+}

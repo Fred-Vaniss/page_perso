@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faStickyNote } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default class PortfolioEntry extends Component {
@@ -15,7 +15,8 @@ export default class PortfolioEntry extends Component {
 						<h4>{item.title}</h4>
 						<p>{item.techno}</p>
 						<div className="portfolio-links">
-							<a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Dépot Github"><FontAwesomeIcon icon={faGithub}/></a>
+							{item.url.note && <button className="portfolio-link" title="Plus de détails"><span><FontAwesomeIcon icon={faStickyNote}/></span></button>}
+							{item.url.git && <a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Dépot Github"><FontAwesomeIcon icon={faGithub}/></a>}
 							{item.url.preview && <a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet"><FontAwesomeIcon icon={faGlobe}/></a>}
 						</div>
 					</div>

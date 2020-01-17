@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const TimelineList = [
 	{
 		type:"entreprise",
@@ -5,8 +7,12 @@ export const TimelineList = [
 		time:"novembre 2019 - janvier 2020",
 		entreprise:"Adevo Solutions",
 		place:"Gilly",
-		desc:"Stage de fin de formation dans une agence créative et marketing.",
-		list:["HTML & CSS", "JavaScript", "PHP"]
+		desc:<>
+				<p>Stage de fin de formation dans une agence créative et marketing. J'ai réalisé des sites sur WordPress et Prestashop autant dans le code que dans le design.</p>
+				<p>J'ai réalisé un site complet et participé au développement de plusieurs autres projets.</p>
+				<p>Ce stage m'a permis d'en découvrir beaucoup plus sur Wordpress et Prestashop et à apprendre beaucoup de choses sur le développement web.</p>
+			</>,
+		list:["HTML & CSS", "JavaScript", "PHP, WordPress, PrestaShop", "Photoshop", "Illustrator"]
 	},
 	{
 		type:"formation",
@@ -14,7 +20,9 @@ export const TimelineList = [
 		time:"avril - octobre 2019",
 		entreprise:"BeCode",
 		place:"Charleroi",
-		desc:"Formation intensive dans le développement front-end et back-end. On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe, participés aux événements tels que les Hackathons, Coder Dojos et autres...",
+		desc:<>
+				<p>Formation intensive dans le développement front-end et back-end.</p><p>On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe, participés aux événements tels que les Hackathons, Coder Dojos et autres...</p>
+			</>,
 		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL & Wordpress"]
 	},
 	{
