@@ -29,7 +29,7 @@ export default class TimelineEntry extends Component {
 				</div>
 
 				<div className="desc">
-					<p>{item.desc}</p>
+					{item.desc}
 					{
 						item.list.length && 
 						<ul>
