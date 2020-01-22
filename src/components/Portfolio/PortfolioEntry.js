@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faStickyNote } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faStickyNote, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default class PortfolioEntry extends Component {
@@ -25,7 +25,16 @@ export default class PortfolioEntry extends Component {
 					</div>
 					<img src={img} alt={item.title}/>
 				</div>
-				{item.url.note && <div id={"modal-port-"+number} className="portfolio-modal">{item.url.note}</div>}
+				{item.url.note && 
+					<div id={"modal-port-"+number} className="portfolio-modal">
+						<div className="modal-box">
+							<button className="modal-close"><FontAwesomeIcon icon={faTimes}/></button>
+							{item.url.note}
+						</div>
+					</div>
+
+				}
+
 			</>
 		)
 	}

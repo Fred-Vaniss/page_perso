@@ -25,7 +25,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 	monospace;
 }
 
-.wrapper{
+.wrapper, .modal-box{
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 20px;
@@ -467,6 +467,8 @@ h2{
 
 	border: none;
 
+	cursor: pointer;
+
 	&:hover{
 		background-color: $orange;
 	}
@@ -482,6 +484,39 @@ a.portfolio-link, .portfolio-link span{
 	height: 100%; width: 100%;
 }
 
+.portfolio-modal{
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background-color: rgba(0, 0, 0, 0.603);
+
+	z-index: 1000;
+}
+
+.modal-box{
+	position: relative;
+	background-color: white;
+
+	margin-top: 60px;
+	padding: 20px 40px;
+
+	h3{
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.modal-close{
+		background-color: transparent;
+		border: none;
+		font-size: 3em;
+		position: absolute;
+		right: 0;
+	}
+}
 
 //?
 //? Formulaire de contact
