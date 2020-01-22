@@ -10,7 +10,6 @@ export default class Portfolio extends Component {
 				<PortfolioEntry
 					item={item}
 					number={index}
-					key={index}
 				/>
 			)
 		})
