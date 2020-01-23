@@ -5,10 +5,11 @@ export default class Portfolio extends Component {
 
 	render() {
 		const listPortfolio = PortfolioList.map((item, index = 0) => {
-			index++
+			let animDelay = 100 * index;
 			return(
 				<PortfolioEntry
 					item={item}
+					animDelay={animDelay}
 					key={index}
 				/>
 			)

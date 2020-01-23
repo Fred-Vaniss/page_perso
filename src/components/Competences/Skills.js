@@ -4,10 +4,11 @@ import { SkillEntry, SkillsList } from '..'
 export default class Skills extends Component {
 	render() {
 		const listSkills = SkillsList.map((item, index = 0) => {
-			index++
+			let animationDelay = 50 * index
 			return(
 				<SkillEntry
 					item={item}
+					delay={animationDelay}
 					key={index}
 				/>
 			)

@@ -27,12 +27,12 @@ export default class PortfolioEntry extends Component {
 	}
 
 	render() {
-		const { item } = this.props
+		const { item, animDelay } = this.props
 		const img = require(`./img/${item.img}.jpg`)
 
 		return (
 			<>
-				<div className="portfolio-entry">
+				<div className="portfolio-entry" data-aos="flip-left" data-aos-delay={animDelay}>
 					<div className="portfolio-info">
 						<div className="portfolio-info-container">
 							<h4>{item.title}</h4>

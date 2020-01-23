@@ -7,7 +7,7 @@ export default class TimelineEntry extends Component {
 	render() {
 		const { item } = this.props
 
-		return <div className="timeline-entry">
+		return <div className="timeline-entry" data-aos="fade-up">
 				<div className="work-category">
 					{{	//? Equivalent d'un switch
 						formation:

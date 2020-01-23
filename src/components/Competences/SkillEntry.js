@@ -4,12 +4,12 @@ import { SubSkillEntry } from '.'
 export default class SkillEntry extends Component {
 
 	render() {
-		const { item } = this.props
+		const { item, delay } = this.props
 
 		const img = require(`./img/${item.icon}.svg`)
 
 		return (
-			<div className="skill-entry"> 	
+			<div className="skill-entry" data-aos="zoom-in" data-aos-delay={delay}> 	
 				<img src={img} alt={item.title} className="skill-icon"/>
 				<div className="skill-tooltip-bloc">
 					<span className="skill-tooltip">{item.title}</span>
