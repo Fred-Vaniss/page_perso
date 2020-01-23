@@ -114,6 +114,22 @@ span.italic{
 	position: relative;
 	top: -40px;
 	width: 100%;
+	transition: box-shadow .3s;
+	&.sticky{
+		position: fixed;
+
+		top: 0;
+		left: 0;
+
+		height: 60px;
+
+		background-color: $blue;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+
+		padding: 20px 0;
+
+		z-index: 90;
+	}
 }
 
 .burger-button{
@@ -198,20 +214,6 @@ span.italic{
 	
 }
 
-.sticky{
-	position: fixed;
-
-	top: 0;
-	left: 0;
-
-	height: 60px;
-
-	background-color: $blue;
-
-	padding: 20px 0;
-
-	z-index: 90;
-}
 
 .download-cv{
 	background-color: $orange;
