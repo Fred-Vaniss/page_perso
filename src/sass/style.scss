@@ -396,6 +396,7 @@ span.italic{
 	height: 160px;
 	overflow:hidden;
 	margin-bottom: 1.5em;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	img{
 		position: absolute;
 		top: 0; left: O;
@@ -510,6 +511,8 @@ a.portfolio-link, .portfolio-link span{
 
 	transition: opacity .3s, visibility .3s;
 
+	overflow-y: scroll;
+
 	&.shown{
 		visibility: visible;
 		opacity: 1;
@@ -523,6 +526,7 @@ a.portfolio-link, .portfolio-link span{
 
 		margin-top: 60px;
 		padding: 20px 40px;
+
 
 		h3{
 			font-size: 2em;

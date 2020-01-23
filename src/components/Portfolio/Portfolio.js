@@ -9,7 +9,7 @@ export default class Portfolio extends Component {
 			return(
 				<PortfolioEntry
 					item={item}
-					number={index}
+					key={index}
 				/>
 			)
 		})

@@ -12,11 +12,14 @@ export default class PortfolioEntry extends Component {
 		}
 	}
 	
-	toggleModal(action){
-		console.log('action: '+action)
-		if (action){
+	toggleModal(action, e = null){
+		if (action === true){
 			this.setState({class: "shown"})
 			document.body.style = "overflow-y: hidden"
+		} else if (action === "background") {
+			if (e.target.className === "portfolio-modal shown"){
+				this.toggleModal(false)
+			}
 		} else {
 			this.setState({class: ""})
 			document.body.style = ""
@@ -44,11 +47,11 @@ export default class PortfolioEntry extends Component {
 					<img src={img} alt={item.title}/>
 				</div>
 				{item.url.note && 
-					<div className={"portfolio-modal "+this.state.class}>
+					<div className={"portfolio-modal "+this.state.class} onClick={e => this.toggleModal("background", e)}>
 						<div className="modal-box">
-							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={() => this.toggleModal(false)}/></button>
+							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => this.toggleModal(false, e)}/></button>
 							{item.url.note}
-							<button className="form-submit modal-close-bottom" onClick={() => this.toggleModal(false)}>Fermer</button>
+							<button className="form-submit modal-close-bottom" onClick={e => this.toggleModal(false, e)}>Fermer</button>
 						</div>
 					</div>
 
