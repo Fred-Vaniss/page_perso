@@ -1,4 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
+
+class Img extends Component{
+	render(){
+		const { src } = this.props
+		const img = src.map((item, index) => {
+			let thumb = require(`./img/portfolio/${item}-thumb.jpg`)
+			let image = require(`./img/portfolio/${item}.jpg`)
+			return(
+				<div className="modal-image-container" key={index}>
+					<a href={image}>
+						<img src={thumb} alt="" key={index}/>
+					</a>
+				</div>
+			)
+		})
+		return(
+			<>
+				<div className="modal-gallery">
+					{ img }
+				</div>
+			</>
+		)
+	}
+}
 
 export const PortfolioList = [
 	{
@@ -67,6 +91,7 @@ export const PortfolioList = [
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Durée du projet: 2 mois</li>
 						</ul>
+						<Img src={["helio-1","helio-2","helio-3"]}/>
 						<p>Mon premier projet de stage chez ADEVO Solutions consiste à concevoir et à construire un site internet pour promouvoir et vendre un produit et services Heliostart. C'est un boitier permettant d'automatiser le fonctionnement d'un banc solaire à l'aide d'une application Android, il propose également des services de création de site web.</p>
 						<p>Le projet s'est basé d'un thème Wordpress. Le site étant sur-mesure, il a fallu beaucoup modifier dans le CSS et pas mal d'élément ont étés construite en HTML brut.</p>
 						<p>J'ai du aussi mettre en application mes talents de graphiste et de Webdesigner, j'avais à disposition une maquette de ce que devrais ressembler le site mais il m'a fallu créer pas mal d'éléments graphique pour le site, tel que le logo, le fond de la page d'accueil, les pictogrammes, et ainsi de suite.</p>

@@ -46,7 +46,9 @@ span.italic{
 	font-style: italic;
 }
 
-
+#portfolio, #skills{
+	box-shadow: inset 0px 12px 10px -10px #00000030, inset 0px -12px 10px -10px #00000030
+}
 
 //?
 //? Intro plein écran
@@ -563,6 +565,12 @@ a.portfolio-link, .portfolio-link span{
 	}
 }
 
+
+.modal-image-container{
+	img{
+		width: 100%;
+	}
+}
 
 //?
 //? Formulaire de contact
