@@ -100,7 +100,16 @@
 
 	.contact-details{
 		margin-top: 0;
-		width: 30%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.contact-item{
+		flex-direction: column;
+		a{
+			margin-right: 0;
+			margin-bottom: .5em;
+		}
 	}
 
 	footer{

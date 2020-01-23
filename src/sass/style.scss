@@ -568,57 +568,6 @@ a.portfolio-link, .portfolio-link span{
 //? Formulaire de contact
 //?////////////////////////////
 
-.form-group{
-	margin-top: 1.4em;
-	margin-bottom: 2.2em;
-	position: relative;
-}
-
-.form-group[required]{
-	margin-bottom: 0;
-}
-
-label{
-	font-variant: small-caps;
-
-	position: absolute;
-	top: 8px; left: 8px;
-
-	display: inline-block;
-	transition: transform 0.1s;
-	color: rgb(109, 109, 109)
-}
-
-input, textarea{
-	font-family: "Roboto", "Oxygen",
-	  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-	  sans-serif;
-	font-family: roboto;
-	border: none;
-	border-bottom: 4px solid #2098D1;
-	background-color: #F1F2F2;
-
-	width: 100%;
-
-	padding: .6em;
-	
-	&:focus, &:valid{
-		outline: none;
-		+label{
-			color: black;
-		}
-	}
-}
-
-textarea{
-	height: 12em;
-}
-
-.field-fill{
-	transform: translate(-8px, -1.8em);
-	color: black;
-}
-
 .form-submit{
 	margin: 1em 0;
 	background: $blue;
@@ -633,28 +582,9 @@ textarea{
 	}
 }
 
-.field-error{
-	border-bottom: 4px solid red!important;
-}
-
-.field-valid{
-	border-bottom: 4px solid green!important;
-}
-
-.form-info{
-	font-weight: bold;
-}
-
-.form-success{
-	color: #009600;
-}
-
-.form-error{
-	color: red;
-}
-
 .contact-note{
 	margin-bottom: 3em;
+	font-size: 1.2em;
 }
 
 .contact-details{
