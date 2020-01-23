@@ -63,6 +63,7 @@ export const PortfolioList = [
 						<h3>Heliostart</h3>
 						<h4>Réalisé chez ADEVO Solutions</h4>
 						<ul>
+							<li>Novembre 2019</li>
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Durée du projet: 2 mois</li>
 						</ul>
@@ -83,6 +84,7 @@ export const PortfolioList = [
 						<h3>Isotrim</h3>
 						<h4>Réalisé chez ADEVO Solutions</h4>
 						<ul>
+							<li>Janvier 2020</li>
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Projet auquel j'ai participé au développement</li>
 						</ul>
@@ -103,6 +105,7 @@ export const PortfolioList = [
 						<h3>Shoebiz & Latino Mode</h3>
 						<h4>Réalisé chez ADEVO Solutions</h4>
 						<ul>
+							<li>Janvier 2020</li>
 							<li>Technologies utilisés: PrestaShop, PHP, JavaScript</li>
 							<li>Projet partiellement réalisé en un mois</li>
 						</ul>
