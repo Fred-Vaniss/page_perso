@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 class Img extends Component{
 	render(){
 		const { src } = this.props
+		const galID = Math.random()*9999
 		const img = src.map((item, index) => {
 			let thumb = require(`./img/portfolio/${item}-thumb.jpg`)
 			let image = require(`./img/portfolio/${item}.jpg`)
 			return(
 				<div className="modal-image-container" key={index}>
-					<a href={image}>
+					<a href={image} data-lightbox={'gallery-'+galID}>
 						<img src={thumb} alt="" key={index}/>
 					</a>
 				</div>
