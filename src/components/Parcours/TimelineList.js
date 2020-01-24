@@ -5,7 +5,7 @@ export const TimelineList = [
 		type:"entreprise",
 		title:"Stage développeur web",
 		time:"novembre 2019 - janvier 2020",
-		entreprise:"Adevo Solutions",
+		entreprise:"ADEVO Solutions",
 		place:"Gilly",
 		desc:<>
 				<p>Stage de fin de formation de BeCode dans une agence créative et marketing. J'ai réalisé des sites sur WordPress et Prestashop autant dans le code que dans le design.</p>
