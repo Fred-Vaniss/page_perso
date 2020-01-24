@@ -32,6 +32,24 @@ export const PortfolioList = [
 		techno: "HTML, SASS, JavaScript",
 		img: "artifact",
 		url: {
+			note:	<>
+						<h3>Artifact Rush</h3>
+						<h4>Projet de fin d'étude de bachelier</h4>
+						<ul>
+							<li>Janvier 2019</li>
+							<li>Technos: HTML, SASS, JavaScript</li>
+							<li>Durée du projet: 2 mois</li>
+						</ul>
+						<Img src={[
+							{img: "artifact-1", alt: "Section d'accueil"},
+							{img: "artifact-2", alt: "Section portfolio"},
+							{img: "artifact-3", alt: "Détail d'un article dans un modal"}
+						]}/>
+						<p>Je me suis lancé sur ce projet de recréation de ce site pour mettre en application ce que j'avais appris en UX Webdesign chez Technocité.</p>
+						<p>C'est une refonte de <a href="https://speedy-vongofast.github.io/artifact-rush-website/" target="_blank" rel="noopener noreferrer nofollow">mon site de projet de fin d'études (créé en 2017)</a> qui à la base était juste un thème Bootstrap que j'avais tout simplement modifié, je n'avais quasi aucune connaissance dans le développement web à cette époque.</p>
+						<p>Cette refonte n'a pas Bootstrap et toutes les fonctionnalités du site sont faites en JavaScript pur. J'ai également fait des améliorations sur la mise en page et elle est parfaitement responsive.</p>
+						
+					</>,
 			git: "https://github.com/Fred-Vaniss/artifact-rush-website",
 			preview: "https://fred-vaniss.github.io/artifact-rush-website/"
 		}
