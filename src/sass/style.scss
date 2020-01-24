@@ -565,10 +565,20 @@ a.portfolio-link, .portfolio-link span{
 	}
 }
 
+.modal-gallery{
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
 
 .modal-image-container{
 	img{
 		width: 100%;
+	box-shadow: 0 3px 6px #00000030;
+	}
+	p{
+		margin-top: 0;
+		font-style: italic;
+		font-size: .8em;
 	}
 }
 

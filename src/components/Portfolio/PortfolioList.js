@@ -5,13 +5,14 @@ class Img extends Component{
 		const { src } = this.props
 		const galID = Math.random()*9999
 		const img = src.map((item, index) => {
-			let thumb = require(`./img/portfolio/${item}-thumb.jpg`)
-			let image = require(`./img/portfolio/${item}.jpg`)
+			let thumb = require(`./img/portfolio/${item.img}-thumb.jpg`)
+			let image = require(`./img/portfolio/${item.img}.jpg`)
 			return(
 				<div className="modal-image-container" key={index}>
-					<a href={image} data-lightbox={'gallery-'+galID}>
-						<img src={thumb} alt="" key={index}/>
+					<a href={image} data-lightbox={'gallery-'+galID} title={item.alt} data-title={item.alt}>
+						<img src={thumb} alt={item.alt} key={index}/>
 					</a>
+					<p>{item.alt}</p>
 				</div>
 			)
 		})
@@ -92,7 +93,11 @@ export const PortfolioList = [
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Durée du projet: 2 mois</li>
 						</ul>
-						<Img src={["helio-1","helio-2","helio-3"]}/>
+						<Img src={[
+							{img: "helio-1", alt: "Page d'accueil"},
+							{img: "helio-2", alt: "Section boutique"},
+							{img: "helio-3", alt: "Section de présentation du produit"}
+						]}/>
 						<p>Mon premier projet de stage chez ADEVO Solutions consiste à concevoir et à construire un site internet pour promouvoir et vendre un produit et services Heliostart. C'est un boitier permettant d'automatiser le fonctionnement d'un banc solaire à l'aide d'une application Android, il propose également des services de création de site web.</p>
 						<p>Le projet s'est basé d'un thème Wordpress. Le site étant sur-mesure, il a fallu beaucoup modifier dans le CSS et pas mal d'élément ont étés construite en HTML brut.</p>
 						<p>J'ai du aussi mettre en application mes talents de graphiste et de Webdesigner, j'avais à disposition une maquette de ce que devrais ressembler le site mais il m'a fallu créer pas mal d'éléments graphique pour le site, tel que le logo, le fond de la page d'accueil, les pictogrammes, et ainsi de suite.</p>
@@ -114,6 +119,11 @@ export const PortfolioList = [
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Projet auquel j'ai participé au développement</li>
 						</ul>
+						<Img src={[
+							{img: "iso-1", alt: "Section ligne du temps modifié"},
+							{img: "iso-2", alt: "Panneau latérale que j'ai créé"},
+							{img: "iso-3", alt:"Section d'accueil que j'ai adapté en responsive"}
+						]}/>
 						<p>Contrairement à Heliostart, ceci est un projet auquel j'ai apporté mon soutien, j'ai principalement apporté des modifications et de nouvelles fonctionnalités au site.</p>
 						<p>En effet, j'ai créé un nouveau module pour le site qui est le panneau latéral, je l'ai créé de toute pièce et on peut y insérer les modules qu'on veut. Ainsi il sert de petit formulaire pour que le client puisse se faire appeler par l'entreprise dans la tranche horaire qu'il veut.</p>
 						<p>Une autre modification que j'ai apporté est celui de la ligne de temps dans la page <span className="italic">à propos</span>. De base il avait juste les bouttons sur la gauche, j'ai modifié son fonctionnement pour qu'il défile tout seule jusqu'à ce qu'on interagisse avec et ajouté deux boutons sur les côtés pour passer au slide suivant et précédent.</p>
@@ -135,6 +145,11 @@ export const PortfolioList = [
 							<li>Technologies utilisés: PrestaShop, PHP, JavaScript</li>
 							<li>Projet partiellement réalisé en un mois</li>
 						</ul>
+						<Img src={[
+							{img: "shoe-1", alt:"Section d'accueil du site"},
+							{img: "shoe-2", alt:"Bannière de catégorie ajouté manuellement"},
+							{img: "shoe-3", alt:"Fiche d'un produit"}
+						]}/>
 						<p>J'ai commencé ce projet lors du dernier mois de mon stage chez ADEVO, je n'ai pu faire ce projet que partiellement.</p>
 						<p>Ce projet consistait à faire un site boutique pour Shoebiz & Latino Mode qui vends des chaussures et vêtements pour femme de haute gamme. Ce projet n'étant pas du sur-mesure, on s'est principalement basé sur un thème PrestaShop avec des modifications moins importants que Heliostart</p>
 						<p>PrestaShop était une total découverte pour moi quand j'ai commencé ce projet. Il m'a fallu beaucoup chercher et documenter pour trouver comment modifier le Site. Contrairement à Wordpress, il faut beaucoup plus modifier les fichiers du thème pour modifier la mise en page comme on veut.</p>
