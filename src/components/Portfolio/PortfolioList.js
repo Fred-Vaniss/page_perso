@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Img extends Component{
 	render(){
 		const { src } = this.props
-		const galID = Math.random()*9999
+		const galID = Math.floor(Math.random()*99999);
 		const img = src.map((item, index) => {
 			let thumb = require(`./img/portfolio/${item.img}-thumb.jpg`)
 			let image = require(`./img/portfolio/${item.img}.jpg`)

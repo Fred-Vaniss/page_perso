@@ -32,7 +32,7 @@ export default class PortfolioEntry extends Component {
 
 		return (
 			<>
-				<div className="portfolio-entry" data-aos="flip-left" data-aos-delay={animDelay}>
+				<div className="portfolio-entry" data-aos="flip-left" data-aos-delay={animDelay} data-aos-anchor="#portfolio-animate-trigger">
 					<div className="portfolio-info">
 						<div className="portfolio-info-container">
 							<h4>{item.title}</h4>

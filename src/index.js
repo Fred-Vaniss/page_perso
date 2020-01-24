@@ -11,7 +11,7 @@ import 'lightbox2/dist/css/lightbox.css';
 
 AOS.init({
   duration: 800,
-  once: true,
+  once: false,
   ease: 'ease-out'
 });
 

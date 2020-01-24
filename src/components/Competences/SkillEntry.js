@@ -9,7 +9,7 @@ export default class SkillEntry extends Component {
 		const img = require(`./img/${item.icon}.svg`)
 
 		return (
-			<div className="skill-entry" data-aos="zoom-in" data-aos-delay={delay}> 	
+			<div className="skill-entry" data-aos="zoom-in" data-aos-delay={delay} data-aos-anchor="#skills"> 	
 				<img src={img} alt={item.title} className="skill-icon"/>
 				<div className="skill-tooltip-bloc">
 					<span className="skill-tooltip">{item.title}</span>

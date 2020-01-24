@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
 
 		return (
 			<section id="portfolio">
-				<div className="wrapper">
+				<div className="wrapper" id="portfolio-animate-trigger">
 					<h2>Mon portfolio</h2>
 					<div className="portfolio-list">
 						{ listPortfolio }
