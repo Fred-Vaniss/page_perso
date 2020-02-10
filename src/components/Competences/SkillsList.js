@@ -18,11 +18,11 @@ export const SkillsList = [
 		icon: "js",
 		subskills: [
 			{
-				title: "Node.JS",
+				title: "Node",
 				icon: "node"
 			},
 			{
-				title: "ReactJS",
+				title: "React",
 				icon: "react"
 			}
 		]
@@ -34,6 +34,10 @@ export const SkillsList = [
 			{
 				title: "WordPress",
 				icon: "wordpress"
+			},
+			{
+				title: "PrestaShop",
+				icon: "prestashop"
 			}
 		]
 	},

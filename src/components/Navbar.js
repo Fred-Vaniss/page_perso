@@ -40,7 +40,7 @@ export default class Navbar extends Component {
 				<div className={(this.state.sticky) ? "nav-bar sticky" : "nav-bar"} ref="navBar">
 					<button onClick={() => this.openMenu()} className="burger-button">Menu</button>
 					<div className={`wrapper menu ${(this.state.menuOpen) ? "menu-open" : ""}`}>
-						<a href={Cv} className="download-cv">Télécharger le CV</a>
+						<a href={Cv} className="download-cv" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
 						<nav>
 							<ul>
 								<li><a href="#about" onClick={() => this.closeMenu()}>À propos</a></li>

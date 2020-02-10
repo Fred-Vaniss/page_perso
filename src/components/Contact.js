@@ -11,7 +11,7 @@ export default class Contact extends Component {
 					<h2>Contactez-moi</h2>
 					<div className="contact-note" data-aos="fade-up">
 						<p>Je suis actuellement disponible pour tout recrutement.</p>
-						<p>Vous avez besoin de mes services? Vous avez un projet à me confier? Ou vous souhaitez tout simplement discuter? N'hésitez pas à me contacter par e-mail ou par téléphone. </p>
+						<p>Si vous êtes intéressé par mes compétences et que vous souhaitez me recruter, vous pouvez me contacter par e-mail ou par téléphone.</p>
 						<p>Je vous répondrai dès que possible.</p>
 					</div>
 					<div className="contact-details" data-aos="fade-up">

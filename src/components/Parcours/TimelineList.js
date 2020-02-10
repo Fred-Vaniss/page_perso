@@ -1,5 +1,10 @@
 import React from 'react';
 
+/* 
+ * Types: 	Entreprise (building icon)
+ * 			Formation (book icon)
+ * 			Graduation (cap icon)
+ */
 export const TimelineList = [
 	{
 		type:"entreprise",
