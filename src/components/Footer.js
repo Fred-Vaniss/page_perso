@@ -15,10 +15,10 @@ export default class Footer extends Component {
 				<div className="links">
 					<ul>
 						<li>
-							<a href="https://github.com/Fred-Vaniss/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
+							<a href="https://github.com/Fred-Vaniss/" title="Mon profil GitHud" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub}/></a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/fred-vaniss/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+							<a href="https://www.linkedin.com/in/fred-vaniss/" title="Mon profil LinkedIn" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
 						</li>
 					</ul>
 				</div>
