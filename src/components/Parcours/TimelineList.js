@@ -13,8 +13,8 @@ export const TimelineList = [
 		entreprise:"ADEVO Solutions",
 		place:"Gilly",
 		desc:<>
-				<p>Stage de fin de formation de BeCode dans une agence créative et marketing. J'ai réalisé des sites sur WordPress et Prestashop autant dans le code que dans le design.</p>
-				<p>J'ai réalisé un site complet et participé au développement de plusieurs autres projets.</p>
+				<p>Stage de fin de formation de BeCode dans une agence créative et marketing. J'ai réalisé et participé au développement de plusieurs autres projets WordpPress et PrestaShop.</p>
+				<p> L'entreprise étant très petite, j'ai été très polyvalent durant ce stage. J'ai du aussi utiliser mes compétences de graphiste pour créer des images, des pictogrammes, des logos, concevoir la disposition d'un site et veiller à ce que les images soient bien optimisés.</p>
 				<p>Ce stage m'a permis d'en découvrir beaucoup plus sur Wordpress et Prestashop et à apprendre beaucoup de choses sur le développement web.</p>
 			</>,
 		list:["HTML & CSS", "JavaScript", "PHP, WordPress, PrestaShop", "Photoshop", "Illustrator"]
