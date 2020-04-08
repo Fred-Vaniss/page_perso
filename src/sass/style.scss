@@ -1,5 +1,7 @@
 @import 'variables';
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
+
 html{
 	box-sizing: border-box;
 	scroll-behavior: smooth;
@@ -603,7 +605,6 @@ a.portfolio-link, .portfolio-link span{
 
 .contact-note{
 	margin-bottom: 3em;
-	font-size: 1.2em;
 }
 
 .contact-details{
