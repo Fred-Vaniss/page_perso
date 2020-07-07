@@ -4,7 +4,7 @@ import { PortfolioList, PortfolioEntry } from './'
 export default class Portfolio extends Component {
 
 	render() {
-		const listPortfolio = PortfolioList.map((item, index = 0) => {
+		const listPortfolio = PortfolioList.reverse().map((item, index = 0) => {
 			let animDelay = 100 * index;
 			return(
 				<PortfolioEntry
