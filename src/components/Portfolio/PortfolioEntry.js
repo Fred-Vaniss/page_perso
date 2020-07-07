@@ -51,7 +51,10 @@ export default class PortfolioEntry extends Component {
 						<div className="modal-box">
 							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => this.toggleModal(false, e)}/></button>
 							{item.url.note}
-							<button className="form-submit modal-close-bottom" onClick={e => this.toggleModal(false, e)}>Fermer</button>
+							<div className="modal-bottom">
+								{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">Page du projet</a>} <br/>
+								<button className="form-submit modal-close-bottom" onClick={e => this.toggleModal(false, e)}>Fermer</button>
+							</div>
 						</div>
 					</div>
 

@@ -9,4 +9,10 @@
 		width: 45%;
 		padding-top: 25.25%;
 	}
+
+	.modal-bottom{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse
+	}
 }
