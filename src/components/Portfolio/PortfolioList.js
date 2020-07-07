@@ -175,5 +175,30 @@ export const PortfolioList = [
 					</>,
 			preview: "http://shoebiz.adevo.be"
 		}
+	},
+	{
+		title: "Fiche personnage",
+		techno: "ReactJS, SASS",
+		img: "dnd",
+		url: {
+			note:	<>
+						<h3>Fiche de personnage Donjons & Dragons</h3>
+						<h4>Projet personnel</h4>
+						<ul>
+							<li>Mars 2020</li>
+							<li>Technologies utilisés: ReactJS, SASS</li>
+							<li>Projet en cours de développement</li>
+						</ul>
+						<Img src={[
+							{img: "dnd-1", alt:"Fiche de personnage"},
+							{img: "dnd-2", alt:"Classe d'armure"},
+							{img: "dnd-3", alt:"Jets de sauvegardes"}
+						]}/>
+						<p>Je participe avec un groupe d'amis à un jeu de rôle Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué tous les informations sur son personnage.</p>
+						<p>Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique mais en plus il fera les calculs automatiquement avec les différents statistiques associés.</p>
+						<p>Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportés sont enregistrés dans l'URL en tant que paramètre.</p>
+					</>,
+			preview: "https://fred-vaniss.be/dnd-sheet/"
+		}
 	}
 ]
