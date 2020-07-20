@@ -5,14 +5,13 @@ const App = props => {
 
   const [lang, setLang] = useState('fr')
 
-  const handleLangButtons = {
-    fr: (e) => { setLang('fr') },
-    en: (e) => { setLang('en') }
+  const handleLangButton = e => {
+    lang === 'fr' ? setLang('en') : setLang('fr');
   }
 
   return (
     <>
-      <Intro lang={lang} handleButton={handleLangButtons}/>
+      <Intro lang={lang} handleButton={handleLangButton}/>
       <About/>
       <Skills/>
       <Timeline/>

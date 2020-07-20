@@ -1,5 +1,24 @@
 import React from 'react';
 
+export const LocNavbar = {
+	lang: {
+		fr: 'English',
+		en: 'Français'
+	},
+	about: {
+		fr: 'À propos',
+		en: 'About'
+	},
+	skills: {
+		fr: 'Compétences',
+		en: 'Skills'
+	},
+	career: {
+		fr: 'Parcours',
+		en: 'Career'
+	}
+}
+
 export const LocIntro = {
 	fr: <>
 		<h1>Frédérick Van Isschot</h1>

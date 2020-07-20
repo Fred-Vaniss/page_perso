@@ -14,7 +14,7 @@ const Intro = props => {
 					{LocIntro[props.lang]}
 				</div>
 			</div>
-			<Navbar/>
+			<Navbar lang={props.lang} handleButton={props.handleButton}/>
 		</section>
 	)
 }

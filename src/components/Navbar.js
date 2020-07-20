@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import Cv from '../assets/cv.pdf'
+import React, { useState, useEffect } from 'react';
+import Cv from '../assets/cv.pdf';
+import { LocNavbar } from './Localization';
 
 const Navbar = props => {
 	const [sticky, setSticky] = useState(false);
@@ -27,6 +28,8 @@ const Navbar = props => {
 		}
 	}
 
+	const loc = LocNavbar;
+
 	return(
 		<>
 			<div className={`menu-dim ${menuOpen ? "dimmer" : ""}`} onClick={() => closeMenu()}></div>
@@ -39,9 +42,9 @@ const Navbar = props => {
 					<div className="menu-box">
 						<nav>
 							<ul>
-								<li><a href="#about" 		onClick={closeMenu}>À propos</a></li>
-								<li><a href="#skills" 		onClick={closeMenu}>Compétences</a></li>
-								<li><a href="#experience" 	onClick={closeMenu}>Parcours</a></li>
+								<li><a href="#about" 		onClick={closeMenu}>{loc.about[props.lang]}</a></li>
+								<li><a href="#skills" 		onClick={closeMenu}>{loc.skills[props.lang]}</a></li>
+								<li><a href="#experience" 	onClick={closeMenu}>{loc.career[props.lang]}</a></li>
 								<li><a href="#portfolio" 	onClick={closeMenu}>Portfolio</a></li>
 								<li><a href="#contact" 		onClick={closeMenu}>Contact</a></li>
 							</ul>
@@ -49,7 +52,7 @@ const Navbar = props => {
 					</div>
 					<div className="menu-box">
 						<div className="lang-switcher">
-							<button>English</button>
+							<button onClick={props.handleButton}>{loc.lang[props.lang]}</button>
 						</div>
 					</div>
 				</div>
