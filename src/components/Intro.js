@@ -1,22 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Navbar } from './'
 import Logo from '../assets/logo-bg.svg'
+import {LocIntro} from './Localization'
 
-export default class Intro extends Component {
-	render(){
-		return(
-			<section id="intro">
-				<div className="wrapper fullscreen">
-					<div className="logo-container">
-						<img src={Logo} alt="Logo" className="logo-big puff-in-center"/>
-					</div>
-					<div className="intro-title animated fadeInDown">
-						<h1>Frédérick Van Isschot</h1>
-						<h2>Développeur web junior</h2>
-					</div>
+const Intro = props => {
+	return(
+		<section id="intro">
+			<div className="wrapper fullscreen">
+				<div className="logo-container">
+					<img src={Logo} alt="Logo" className="logo-big puff-in-center"/>
 				</div>
-				<Navbar/>
-			</section>
-		)
-	}
+				<div className="intro-title animated fadeInDown">
+					{LocIntro[props.lang]}
+				</div>
+			</div>
+			<Navbar/>
+		</section>
+	)
 }
+
+export default Intro;

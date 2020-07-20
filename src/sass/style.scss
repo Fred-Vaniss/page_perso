@@ -178,7 +178,7 @@ span.italic{
 }
 
 .menu{
-	padding-top: 1.5em;
+	padding: 1.5em 1em 0 1em;
 
 	font-variant: small-caps;
 	font-weight: bold;
@@ -216,6 +216,24 @@ span.italic{
 	}
 
 	
+}
+
+.lang-switcher{
+	button{
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		color: white;
+		padding: 0 .6em;
+
+		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 1em;
+		text-align: right;
+	}
+	position: absolute;
+	bottom: 1em;
+	right: .6em;
 }
 
 

@@ -1,58 +1,61 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import Cv from '../assets/cv.pdf'
 
-export default class Navbar extends Component {
-	constructor () {
-		super()
-		this.state = {
-			sticky: false,
-			menuOpen: false,
-		}
-	}
+const Navbar = props => {
+	const [sticky, setSticky] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
-	componentDidMount() {
-		window.addEventListener('scroll', this.handleScroll);
-	}
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+	});
 
-	handleScroll = () => {
+	const handleScroll = () => {
 		if (window.pageYOffset > window.innerHeight-60){
-			this.setState({sticky : true})
+			setSticky(true);
 		} else {
-			this.setState({sticky : false})
+			setSticky(false);
 		}
 	}
 
-	openMenu = () => {
-		this.setState({menuOpen: !this.state.menuOpen});
-		console.log(this.state.menuOpen)
+	const openMenu = () => {
+		setMenuOpen(!menuOpen);
 	}
 
-	closeMenu = () => {
-		if (this.state.menuOpen === true){
-			this.setState({menuOpen: false});
+	const closeMenu = () => {
+		if (menuOpen === true){
+			setMenuOpen(false);
 		}
 	}
 
-	render(){
-		return(
-			<>
-				<div className={`menu-dim ${this.state.menuOpen ? "dimmer" : ""}`} onClick={() => this.closeMenu()}></div>
-				<div className={(this.state.sticky) ? "nav-bar sticky" : "nav-bar"} ref="navBar">
-					<button onClick={() => this.openMenu()} className="burger-button">Menu</button>
-					<div className={`wrapper menu ${(this.state.menuOpen) ? "menu-open" : ""}`}>
-						<a href={Cv} className="download-cv" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
+	return(
+		<>
+			<div className={`menu-dim ${menuOpen ? "dimmer" : ""}`} onClick={() => closeMenu()}></div>
+			<div className={(sticky) ? "nav-bar sticky" : "nav-bar"}>
+				<button onClick={() => openMenu()} className="burger-button">Menu</button>
+				<div className={`menu ${(menuOpen) ? "menu-open" : ""}`}>
+					<div className="menu-box">
+						<a href={Cv} className="download-cv" target="_blank" rel="noopener noreferrer">CV PDF</a>
+					</div>
+					<div className="menu-box">
 						<nav>
 							<ul>
-								<li><a href="#about" onClick={() => this.closeMenu()}>À propos</a></li>
-								<li><a href="#skills" onClick={() => this.closeMenu()}>Compétences</a></li>
-								<li><a href="#experience" onClick={() => this.closeMenu()}>Parcours</a></li>
-								<li><a href="#portfolio" onClick={() => this.closeMenu()}>Portfolio</a></li>
-								<li><a href="#contact" onClick={() => this.closeMenu()}>Contact</a></li>
+								<li><a href="#about" 		onClick={closeMenu}>À propos</a></li>
+								<li><a href="#skills" 		onClick={closeMenu}>Compétences</a></li>
+								<li><a href="#experience" 	onClick={closeMenu}>Parcours</a></li>
+								<li><a href="#portfolio" 	onClick={closeMenu}>Portfolio</a></li>
+								<li><a href="#contact" 		onClick={closeMenu}>Contact</a></li>
 							</ul>
 						</nav>
 					</div>
+					<div className="menu-box">
+						<div className="lang-switcher">
+							<button>English</button>
+						</div>
+					</div>
 				</div>
-			</>
-		)
-	}
+			</div>
+		</>
+	)
 }
+
+export default Navbar;

@@ -35,8 +35,24 @@
 		}
 		li{
 			display: inline-block;
-			margin-left: 1.2em;
+			&:not(:first-child){
+				margin-left: 1.2em;
+			}
 		}
+	}
+
+	.menu-box{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	.menu-box:nth-child(2){
+		flex-grow: 5;
+	}
+
+	.lang-switcher{
+		margin-left: auto;
 	}
 
 	.menu-open{
@@ -50,6 +66,7 @@
 	.download-cv{
 		position: relative;
 		top: -10px;
+		margin-right: auto;
 	}
 
 	.skill-icon{
