@@ -1,9 +1,9 @@
 import React from 'react'
 import { Navbar } from './'
-import Logo from '../assets/logo-bg.svg'
 import {LocIntro} from './Localization'
 
 const Intro = props => {
+	const Logo = `/assets/img/logo-bg.svg`
 	return(
 		<section id="intro">
 			<div className="wrapper fullscreen">

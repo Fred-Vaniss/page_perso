@@ -6,7 +6,7 @@ export default class SkillEntry extends Component {
 	render() {
 		const { item, delay } = this.props
 
-		const img = require(`./img/${item.icon}.svg`)
+		const img = `/assets/img/competences/${item.icon}.svg`
 
 		return (
 			<div className="skill-entry" data-aos="zoom-in" data-aos-delay={delay} data-aos-anchor="#skills"> 	

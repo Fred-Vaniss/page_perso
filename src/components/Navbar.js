@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Cv from '../assets/cv.pdf';
 import { LocNavbar } from './Localization';
 
 const Navbar = props => {
@@ -29,6 +28,7 @@ const Navbar = props => {
 	}
 
 	const loc = LocNavbar;
+	const Cv = `/assets/cv.pdf`
 
 	return(
 		<>

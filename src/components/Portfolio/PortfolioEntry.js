@@ -28,7 +28,7 @@ export default class PortfolioEntry extends Component {
 
 	render() {
 		const { item, animDelay } = this.props
-		const img = require(`./img/${item.img}.jpg`)
+		const img = `/assets/img/portfolio/${item.img}.jpg`
 
 		return (
 			<>

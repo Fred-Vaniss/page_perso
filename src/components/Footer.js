@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import LogoFooter from "../assets/logo-footer.svg"
 
 
 export default class Footer extends Component {
 	render() {
+		const LogoFooter = `/assets/img/logo-footer.svg`
 		return (
 			<footer className="footer">
 				<div className="wrapper">
