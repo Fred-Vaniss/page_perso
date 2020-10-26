@@ -59,3 +59,12 @@ export const LocSkills = {
 		<h2>My skills</h2>
 	</>
 }
+
+export const LocCareer = {
+	fr: <>
+		<h2>Parcours</h2>
+	</>,
+	en: <>
+		<h2>Career</h2>
+	</>
+}

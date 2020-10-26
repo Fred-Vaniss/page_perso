@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { faMapMarkerAlt, faBook, faBuilding, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default class TimelineEntry extends Component {
+const TimelineEntry = props => {
 
-	render() {
-		const { item } = this.props
+
+		const { item, lang } = props
 
 		return <div className="timeline-entry" data-aos="fade-up">
 				<div className="work-category">
@@ -24,21 +24,23 @@ export default class TimelineEntry extends Component {
 				</div>
 
 				<div className="work-meta">
-					<div className="title">{item.title}</div>
-					<div className="time">{item.time}</div>
+					<div className="title">{item[lang].title}</div>
+					<div className="time">{item[lang].time}</div>
 				</div>
 
 				<div className="desc">
-					{item.desc}
+					{item[lang].desc}
 					{
-						item.list.length && 
+						item[lang].list && 
 						<ul>
-							{item.list.map((itemList, index) => {
+							{item[lang].list.map((itemList, index) => {
 								return <li key={`${item.id}_${index}`}>{itemList}</li>
 							})}
 						</ul>
 					}
 				</div>
 			</div>
-	}
+
 }
+
+export default TimelineEntry;
