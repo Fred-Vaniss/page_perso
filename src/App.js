@@ -14,9 +14,9 @@ const App = props => {
       <Intro lang={lang} handleButton={handleLangButton}/>
       <About lang={lang}/>
       <Skills lang={lang}/>
-      <Timeline/>
-      <Portfolio/>
-      <Contact/>
+      <Timeline lang={lang}/>
+      <Portfolio lang={lang}/>
+      <Contact lang={lang}/>
       <Footer/>
     </>
   );

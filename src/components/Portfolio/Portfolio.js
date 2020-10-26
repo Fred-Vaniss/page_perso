@@ -1,29 +1,30 @@
 import React, { Component } from 'react'
 import { PortfolioList, PortfolioEntry } from './'
 
-export default class Portfolio extends Component {
+const Portfolio = props => {
 
-	render() {
-		const listPortfolio = PortfolioList.reverse().map((item, index = 0) => {
-			let animDelay = 100 * index;
-			return(
-				<PortfolioEntry
-					item={item}
-					animDelay={animDelay}
-					key={index}
-				/>
-			)
-		})
-
-		return (
-			<section id="portfolio">
-				<div className="wrapper" id="portfolio-animate-trigger">
-					<h2>Mon portfolio</h2>
-					<div className="portfolio-list">
-						{ listPortfolio }
-					</div>
-				</div>
-			</section>
+	const listPortfolio = PortfolioList.map((item, index = 0) => {
+		let animDelay = 100 * index;
+		return(
+			<PortfolioEntry
+				item={item}
+				animDelay={animDelay}
+				key={index}
+			/>
 		)
-	}
+	})
+
+	return (
+		<section id="portfolio">
+			<div className="wrapper" id="portfolio-animate-trigger">
+				<h2>Mon portfolio</h2>
+				<div className="portfolio-list">
+					{ listPortfolio }
+				</div>
+			</div>
+		</section>
+	)
+
 }
+
+export default Portfolio;
