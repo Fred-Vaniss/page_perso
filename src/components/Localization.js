@@ -43,9 +43,9 @@ export const LocAbout = {
 	en: <>
 		<h2>About me</h2>
 		<div className="about-text" data-aos="fade-up">
-			<p>I've begun as graphic designer where I learnt multiple tools: photo editing, web, animation, sound system, 3D, etc.</p>
+			<p>I've begun as graphic designer where I learned multiple tools: photo editing, web, animation, sound systems, 3D, etc.</p>
 			<p>Having only the basics of everything, I had to specialize somewhere. So I decided to follow the path of web development where I took self-taught online courses before following web training courses.</p>
-			<p>I first followed UX Webdesign training course, where I learnt to design accessible websites and develop static websites. I realized that I took more pleasure to code instead of designing, so I decided to specialize even more in programming where I learnt even more thing and get started to more concretes projects</p>
+			<p>I first followed UX Webdesign training course, where I learned to design accessible websites and develop static websites. I realized that I took more pleasure to code instead of designing, so I decided to specialize even more in programming where I learnt even more thing and get started to more concrete projects.</p>
 			<p>Since then, I developed a real passion on programming, I love to poke around and discover new things, finding solutions and solve problems.</p>
 		</div>
 	</>

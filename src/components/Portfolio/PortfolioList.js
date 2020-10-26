@@ -64,9 +64,9 @@ export const PortfolioList = [
 							{img: "dnd-2", alt:"Armor class"},
 							{img: "dnd-3", alt:"Save throws"}
 						]}/>
-						<p>I'm participating with a group of friends in a Dugeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the informations about their characters is indicated.</p>
-						<p>So I came up with the idea of making this character sheet in web format. Not only it will be in digital format, but it will also do the calculations automatically with the different associated statistics</p>
-						<p>To simplify the sharing of our character sheets, all changes made are saved in the URL as parameters</p>
+						<p>I'm participating with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.</p>
+						<p>So I came up with the idea of making this character sheet in web format. Not only will it be in digital format, but it will also do the calculations automatically with the different associated statistics.</p>
+						<p>To simplify the sharing of our character sheets, all changes made are saved in the URL as parameters.</p>
 					</>
 			},
 			preview: "https://fred-vaniss.be/dnd-sheet/"
@@ -111,11 +111,11 @@ export const PortfolioList = [
 						{img: "shoe-2", alt:"Manually added category banner"},
 						{img: "shoe-3", alt:"Product sheet"}
 					]}/>
-					<p>I started this project during the last month of my internship at ADEVO, so I was able to do this project only partially</p>
+					<p>I started this project during the last month of my internship at ADEVO, so I was able to do this project only partially.</p>
 					<p>This project consisted of creating a web shop for Shoebiz & Latino Mode that sells high-end women's shoes and clothing. Since this project was not customized, it was mainly based on a PrestaShop theme with minor changes compared to Heliostart</p>
 					<p>PrestaShop was a total discovery for me when I started this project. It took me a lot of research and documentation to find out how to edit the website. Unlike WordPress, it takes much more edits on the theme's files in order to edit the layout as I want.</p>
 					<p>I had to modify the scripts of the modules a lot, especially to transform the responsive menu from a top-down menu to a side-sliding menu.</p>
-					<p>I was able to make all the modification I was asked to in order to show a first presentation of the website to our client. It was now up to him to make the photos and provide the future content to make the rest of the website.</p>
+					<p>I was able to make all the modification I was asked to in order to show a first presentation of the website to our client. It was now up to him to take the photos and provide the future content to make the rest of the website.</p>
 					<p>As my internship was coming to an end, I was unable to continue the project, but it was a very good step forward for the website.</p>
 				</>
 			},
@@ -151,16 +151,17 @@ export const PortfolioList = [
 						<ul>
 							<li>January 2020</li>
 							<li>Used technologies: Wordpress, PHP, JavaScript</li>
+							<li>Project that I've participated</li>
 						</ul>
 						<Img src={[
 							{img: "iso-1", alt: "Modified timeline section"},
 							{img: "iso-2", alt: "Sidebar I've made"},
 							{img: "iso-3", alt:"Reworked home section that I've adapted to responsive"}
 						]}/>
-						<p>Unlike Heliostart, this was a project that I have supported, I mainly made changes and new features to the website</p>
+						<p>Unlike Heliostart, this was a project that I have supported, I mainly made changes and new features to the website.</p>
 						<p>Indeed, I created a new module for the website, which is the side panel, I created it from scratch, we can insert the modules we want. Thus it serves as a small form so that the customer can be called by the company in the time slot he wants.</p>
 						<p>Another change I made is the timeline in the page <span className="italic">about</span>. Before it had just the buttons on the left, I modified it to make it scroll by itself until you interact with it and added two buttons on the sides to go to the next and previous slide.</p>
-						<p>And the last modification I made to the website is the integration of an <span className="italic">lightbox</span> image preview in the website for the pages <span className="italic">our services</span> and <span className="italic"> our realizations</span></p>
+						<p>And the last modification I made to the website is the integration of a <span className="italic">lightbox</span> image preview in the website for the pages <span className="italic">our services</span> and <span className="italic"> our realizations</span>.</p>
 				</>
 			},
 		}
@@ -195,16 +196,17 @@ export const PortfolioList = [
 						<ul>
 							<li>November 2019</li>
 							<li>Used technologies: Wordpress, PHP, JavaScript</li>
+							<li>Project duration: 2 months</li>
 						</ul>
 						<Img src={[
 							{img: "helio-1", alt: "Homepage"},
 							{img: "helio-2", alt: "Shop section"},
 							{img: "helio-3", alt: "Product presentation section"}
 						]}/>
-						<p>My first internship project at ADEVO Solutions is to design and build a website to promote and sell a Heliostart product and services. It is a box that allows to automate the operation of a sunbed using an Android application, it also offers website creation services</p>
+						<p>My first internship project at ADEVO Solutions is to design and build a website to promote and sell a Heliostart product and services. It is a box that allows to automating the operation of a sunbed using an Android application, it also offers website creation services.</p>
 						<p>The project was based on a WordPress theme. The site being customized, it was necessary to modify the CSS a lot and a lot of elements were built in raw HTML</p>
 						<p>I also had to apply my graphic and web designer skills. I had a mock-up of what the website should look like, but I had to create a lot of graphic elements for the website, such as the logo, the background of the homepage, the pictograms and so on.</p>
-						<p>The that that required the most of the work is certainly the order page, for this part I had to create a PHP shortcode so that the prices are up to date with the data entered in WooCommerce articles, then I had to use JavaScript to do the calculation and display the summary according to the selected articles. And in order to add the items correctly to the cart, I also used JavaScript to update the order links to put in the select items in the cart.</p>
+						<p>The part that required the most of the work is certainly the order page, for this part I had to create a PHP shortcode so that the prices are up to date with the data entered in WooCommerce articles, then I had to use JavaScript to do the calculation and display the summary according to the selected articles. And in order to add the items correctly to the cart, I also used JavaScript to update the order links to put in the select items in the cart.</p>
 					</>
 			},
 			preview: "https://www.heliostart.com"
