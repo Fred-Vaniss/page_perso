@@ -119,8 +119,6 @@ export const PortfolioList = [
 					<p>As my internship was coming to an end, I was unable to continue the project, but it was a very good step forward for the website.</p>
 				</>
 			},
-				
-			preview: "http://shoebiz.adevo.be"
 		}
 	},
 	{
@@ -165,7 +163,6 @@ export const PortfolioList = [
 						<p>And the last modification I made to the website is the integration of an <span className="italic">lightbox</span> image preview in the website for the pages <span className="italic">our services</span> and <span className="italic"> our realizations</span></p>
 				</>
 			},
-			preview: "http://isotrim.adevo.be"
 		}
 	},
 	{
@@ -210,7 +207,7 @@ export const PortfolioList = [
 						<p>The that that required the most of the work is certainly the order page, for this part I had to create a PHP shortcode so that the prices are up to date with the data entered in WooCommerce articles, then I had to use JavaScript to do the calculation and display the summary according to the selected articles. And in order to add the items correctly to the cart, I also used JavaScript to update the order links to put in the select items in the cart.</p>
 					</>
 			},
-			preview: "http://heliostart.adevo.be"
+			preview: "https://www.heliostart.com"
 		}
 	},
 	{
