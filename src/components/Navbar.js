@@ -28,7 +28,7 @@ const Navbar = props => {
 	}
 
 	const loc = LocNavbar;
-	const Cv = `/assets/cv.pdf`
+	const Cv = `assets/cv-${props.lang}.pdf`
 
 	return(
 		<>

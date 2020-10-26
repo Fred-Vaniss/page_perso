@@ -23,7 +23,7 @@ const PortfolioEntry = props => {
 
 	
 		const { item, animDelay } = props
-		const img = `/assets/img/portfolio/${item.img}.jpg`
+		const img = `assets/img/portfolio/${item.img}.jpg`
 
 		return (
 			<>

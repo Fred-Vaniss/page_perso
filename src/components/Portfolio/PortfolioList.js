@@ -4,8 +4,8 @@ const Img = props =>{
 	const { src } = props
 	const galID = Math.floor(Math.random()*99999);
 	const img = src.map((item, index) => {
-		let thumb = `/assets/img/portfolio/gallery/${item.img}-thumb.jpg`
-		let image = `/assets/img/portfolio/gallery/${item.img}.jpg`
+		let thumb = `assets/img/portfolio/gallery/${item.img}-thumb.jpg`
+		let image = `assets/img/portfolio/gallery/${item.img}.jpg`
 		return(
 			<div className="modal-image-container" key={index}>
 				<a href={image} data-lightbox={'gallery-'+galID} title={item.alt} data-title={item.alt}>

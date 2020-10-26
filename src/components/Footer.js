@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default class Footer extends Component {
 	render() {
-		const LogoFooter = `/assets/img/logo-footer.svg`
+		const LogoFooter = `assets/img/logo-footer.svg`
 		return (
 			<footer className="footer">
 				<div className="wrapper">
