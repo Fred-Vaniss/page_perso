@@ -12,8 +12,8 @@ const App = props => {
   return (
     <>
       <Intro lang={lang} handleButton={handleLangButton}/>
-      <About/>
-      <Skills/>
+      <About lang={lang}/>
+      <Skills lang={lang}/>
       <Timeline/>
       <Portfolio/>
       <Contact/>
