@@ -1,33 +1,28 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faStickyNote, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export default class PortfolioEntry extends Component {
-	constructor(){
-		super()
+const PortfolioEntry = props => {
 
-		this.state={
-			class: ""
-		}
-	}
+	const [cssClass, setClass] = useState("");
 	
-	toggleModal(action, e = null){
+	const toggleModal = (action, e = null) => {
 		if (action === true){
-			this.setState({class: "shown"})
+			setClass("shown")
 			document.body.style = "overflow-y: hidden"
 		} else if (action === "background") {
 			if (e.target.className === "portfolio-modal shown"){
-				this.toggleModal(false)
+				toggleModal(false)
 			}
 		} else {
-			this.setState({class: ""})
+			setClass("")
 			document.body.style = ""
 		}
 	}
 
-	render() {
-		const { item, animDelay } = this.props
+	
+		const { item, animDelay } = props
 		const img = `/assets/img/portfolio/${item.img}.jpg`
 
 		return (
@@ -35,10 +30,10 @@ export default class PortfolioEntry extends Component {
 				<div className="portfolio-entry" data-aos="flip-left" data-aos-delay={animDelay} data-aos-anchor="#portfolio-animate-trigger">
 					<div className="portfolio-info">
 						<div className="portfolio-info-container">
-							<h4>{item.title}</h4>
+							<h4>{item.title[props.lang] ? item.title[props.lang] : item.title}</h4>
 							<p>{item.techno}</p>
 							<div className="portfolio-links">
-								{item.url.note && <button className="portfolio-link" title="Plus de détails" onClick={() => this.toggleModal(true)}><span><FontAwesomeIcon icon={faStickyNote}/></span></button>}
+								{item.url.note && <button className="portfolio-link" title="Plus de détails" onClick={() => toggleModal(true)}><span><FontAwesomeIcon icon={faStickyNote}/></span></button>}
 								{item.url.git && <a className="portfolio-link" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Dépot Github"><FontAwesomeIcon icon={faGithub}/></a>}
 								{item.url.preview && <a className="portfolio-link" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet"><FontAwesomeIcon icon={faGlobe}/></a>}
 							</div>
@@ -47,20 +42,19 @@ export default class PortfolioEntry extends Component {
 					<img src={img} alt={item.title}/>
 				</div>
 				{item.url.note && 
-					<div className={"portfolio-modal "+this.state.class} onClick={e => this.toggleModal("background", e)}>
+					<div className={"portfolio-modal "+cssClass} onClick={e => toggleModal("background", e)}>
 						<div className="modal-box">
-							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => this.toggleModal(false, e)}/></button>
-							{item.url.note}
+							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => toggleModal(false, e)}/></button>
+							{item.url.note[props.lang]}
 							<div className="modal-bottom">
 								{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">Page du projet</a>} <br/>
-								<button className="form-submit modal-close-bottom" onClick={e => this.toggleModal(false, e)}>Fermer</button>
+								<button className="form-submit modal-close-bottom" onClick={e => toggleModal(false, e)}>Fermer</button>
 							</div>
 						</div>
 					</div>
-
 				}
-
 			</>
 		)
-	}
 }
+
+export default PortfolioEntry;

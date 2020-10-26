@@ -26,11 +26,15 @@ const Img = props =>{
 
 export const PortfolioList = [
 	{
-		title: "Fiche personnage",
+		title: {
+			fr: "Fiche personnage",
+			en: "Character sheet"
+		},
 		techno: "ReactJS, SASS",
 		img: "dnd",
 		url: {
-			note:	<>
+			note: {
+				fr: <>
 						<h3>Fiche de personnage Donjons & Dragons</h3>
 						<h4>Projet personnel</h4>
 						<ul>
@@ -47,6 +51,24 @@ export const PortfolioList = [
 						<p>Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique mais en plus il fera les calculs automatiquement avec les différents statistiques associés.</p>
 						<p>Pour simplifier le partage de nos fiches de personnage, toutes les modifications apportés sont enregistrés dans l'URL en tant que paramètre.</p>
 					</>,
+				en: <>
+						<h3>Dungeon & Dragons character sheet</h3>
+						<h4>Personal project</h4>
+						<ul>
+							<li>March 2020</li>
+							<li>Used technologies: ReactJS, SASS </li>
+							<li>Project under development</li>
+						</ul>
+						<Img src={[
+							{img: "dnd-1", alt:"Character sheet"},
+							{img: "dnd-2", alt:"Armor class"},
+							{img: "dnd-3", alt:"Save throws"}
+						]}/>
+						<p>I'm participating with a group of friends in a Dugeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the informations about their characters is indicated.</p>
+						<p>So I came up with the idea of making this character sheet in web format. Not only it will be in digital format, but it will also do the calculations automatically with the different associated statistics</p>
+						<p>To simplify the sharing of our character sheets, all changes made are saved in the URL as parameters</p>
+					</>
+			},
 			preview: "https://fred-vaniss.be/dnd-sheet/"
 		}
 	},
@@ -55,26 +77,49 @@ export const PortfolioList = [
 		techno: "PrestaShop, JS",
 		img: "shoebiz",
 		url: {
-			note:	<>
-						<h3>Shoebiz & Latino Mode</h3>
-						<h4>Réalisé chez ADEVO Solutions</h4>
-						<ul>
-							<li>Janvier 2020</li>
-							<li>Technologies utilisés: PrestaShop, PHP, JavaScript</li>
-							<li>Projet partiellement réalisé en un mois</li>
-						</ul>
-						<Img src={[
-							{img: "shoe-1", alt:"Section d'accueil du site"},
-							{img: "shoe-2", alt:"Bannière de catégorie ajouté manuellement"},
-							{img: "shoe-3", alt:"Fiche d'un produit"}
-						]}/>
-						<p>J'ai commencé ce projet lors du dernier mois de mon stage chez ADEVO, je n'ai pu faire ce projet que partiellement.</p>
-						<p>Ce projet consistait à faire un site boutique pour Shoebiz & Latino Mode qui vends des chaussures et vêtements pour femme de haut de gamme. Ce projet n'étant pas du sur-mesure, on s'est principalement basé sur un thème PrestaShop avec des modifications moins important que Heliostart</p>
-						<p>PrestaShop était une totale découverte pour moi quand j'ai commencé ce projet. Il m'a fallu beaucoup chercher et documenter pour trouver comment modifier le Site. Contrairement à Wordpress, il faut beaucoup plus modifier les fichiers du thème pour modifier la mise en page comme on veut.</p>
-						<p>J'ai dû beaucoup modifier les scripts des modules, surtout pour transformer le menu responsive sous forme de menu déroulant du haut de la page en menu qui se glisse latéralement.</p>
-						<p>J'ai pu faire toutes les modifications que l'on m'a demandées pour faire une première présentation du site à notre client. C'était désormais à lui de faire les photos et de fournir le futur contenu pour faire la suite du site web.</p>
-						<p>Mon stage touchant à sa fin, je n'ai pas pu faire la suite du projet, mais c'était une très bonne avancée pour le site.</p>
-					</>,
+			note: {
+				fr: <>
+					<h3>Shoebiz & Latino Mode</h3>
+					<h4>Réalisé chez ADEVO Solutions</h4>
+					<ul>
+						<li>Janvier 2020</li>
+						<li>Technologies utilisés: PrestaShop, PHP, JavaScript</li>
+						<li>Projet partiellement réalisé en un mois</li>
+					</ul>
+					<Img src={[
+						{img: "shoe-1", alt:"Section d'accueil du site"},
+						{img: "shoe-2", alt:"Bannière de catégorie ajouté manuellement"},
+						{img: "shoe-3", alt:"Fiche d'un produit"}
+					]}/>
+					<p>J'ai commencé ce projet lors du dernier mois de mon stage chez ADEVO, je n'ai pu faire ce projet que partiellement.</p>
+					<p>Ce projet consistait à faire un site boutique pour Shoebiz & Latino Mode qui vends des chaussures et vêtements pour femme de haut de gamme. Ce projet n'étant pas du sur-mesure, on s'est principalement basé sur un thème PrestaShop avec des modifications moins important que Heliostart</p>
+					<p>PrestaShop était une totale découverte pour moi quand j'ai commencé ce projet. Il m'a fallu beaucoup chercher et documenter pour trouver comment modifier le Site. Contrairement à Wordpress, il faut beaucoup plus modifier les fichiers du thème pour modifier la mise en page comme je veut.</p>
+					<p>J'ai dû beaucoup modifier les scripts des modules, surtout pour transformer le menu responsive sous forme de menu déroulant du haut de la page en menu qui se glisse latéralement.</p>
+					<p>J'ai pu faire toutes les modifications que l'on m'a demandées pour faire une première présentation du site à notre client. C'était désormais à lui de faire les photos et de fournir le futur contenu pour faire la suite du site web.</p>
+					<p>Mon stage touchant à sa fin, je n'ai pas pu faire la suite du projet, mais c'était une très bonne avancée pour le site.</p>
+				</>,
+				en: <>
+					<h3>Shoebiz & Latino Mode</h3>
+					<h4>Made at Adevo Solutions</h4>
+					<ul>
+						<li>January 2020</li>
+						<li>Used technologies: PrestaShop, PHP, JavaScript</li>
+						<li>Project partially completed in one month</li>
+					</ul>
+					<Img src={[
+						{img: "shoe-1", alt:"Home section of the website"},
+						{img: "shoe-2", alt:"Manually added category banner"},
+						{img: "shoe-3", alt:"Product sheet"}
+					]}/>
+					<p>I started this project during the last month of my internship at ADEVO, so I was able to do this project only partially</p>
+					<p>This project consisted of creating a web shop for Shoebiz & Latino Mode that sells high-end women's shoes and clothing. Since this project was not customized, it was mainly based on a PrestaShop theme with minor changes compared to Heliostart</p>
+					<p>PrestaShop was a total discovery for me when I started this project. It took me a lot of research and documentation to find out how to edit the website. Unlike WordPress, it takes much more edits on the theme's files in order to edit the layout as I want.</p>
+					<p>I had to modify the scripts of the modules a lot, especially to transform the responsive menu from a top-down menu to a side-sliding menu.</p>
+					<p>I was able to make all the modification I was asked to in order to show a first presentation of the website to our client. It was now up to him to make the photos and provide the future content to make the rest of the website.</p>
+					<p>As my internship was coming to an end, I was unable to continue the project, but it was a very good step forward for the website.</p>
+				</>
+			},
+				
 			preview: "http://shoebiz.adevo.be"
 		}
 	},
@@ -83,7 +128,8 @@ export const PortfolioList = [
 		techno: "Wordpress, JS",
 		img: "isotrim",
 		url: {
-			note: 	<>
+			note: {
+				fr: <>
 						<h3>Isotrim</h3>
 						<h4>Réalisé chez ADEVO Solutions</h4>
 						<ul>
@@ -101,6 +147,24 @@ export const PortfolioList = [
 						<p>Une autre modification que j'ai apportée est celle de la ligne de temps dans la page <span className="italic">à propos</span>. De base il avait juste les boutons sur la gauche, j'ai modifié son fonctionnement pour qu'il défile tout seul jusqu'à ce qu'on interagisse avec et ajouté deux boutons sur les côtés pour passer au slide suivant et précédent.</p>
 						<p>Et la dernière modification que j'ai apportée au site est l'intégration d'un aperçu d'image <span className="italic">lightbox</span> dans le site pour les pages <span className="italic">nos services</span> et <span className="italic">nos réalisations</span></p>
 					</>,
+				en: <>
+						<h3>Isotrim</h3>
+						<h4>Made at ADEVO Solutions</h4>
+						<ul>
+							<li>January 2020</li>
+							<li>Used technologies: Wordpress, PHP, JavaScript</li>
+						</ul>
+						<Img src={[
+							{img: "iso-1", alt: "Modified timeline section"},
+							{img: "iso-2", alt: "Sidebar I've made"},
+							{img: "iso-3", alt:"Reworked home section that I've adapted to responsive"}
+						]}/>
+						<p>Unlike Heliostart, this was a project that I have supported, I mainly made changes and new features to the website</p>
+						<p>Indeed, I created a new module for the website, which is the side panel, I created it from scratch, we can insert the modules we want. Thus it serves as a small form so that the customer can be called by the company in the time slot he wants.</p>
+						<p>Another change I made is the timeline in the page <span className="italic">about</span>. Before it had just the buttons on the left, I modified it to make it scroll by itself until you interact with it and added two buttons on the sides to go to the next and previous slide.</p>
+						<p>And the last modification I made to the website is the integration of an <span className="italic">lightbox</span> image preview in the website for the pages <span className="italic">our services</span> and <span className="italic"> our realizations</span></p>
+				</>
+			},
 			preview: "http://isotrim.adevo.be"
 		}
 	},
@@ -109,7 +173,8 @@ export const PortfolioList = [
 		techno: "Wordpress, JS",
 		img: "heliostart",
 		url: {
-			note: 	<>
+			note: {
+				fr: <>
 						<h3>Heliostart</h3>
 						<h4>Réalisé chez ADEVO Solutions</h4>
 						<ul>
@@ -127,11 +192,32 @@ export const PortfolioList = [
 						<p>J'ai du aussi mettre en application mes talents de graphiste et de Webdesigner, j'avais à disposition une maquette de ce que devrais ressembler le site, mais il m'a fallu créer pas mal d'éléments graphiques pour le site, tel que le logo, le fond de la page d'accueil, les pictogrammes, et ainsi de suite.</p>
 						<p>La partie qui m'a demandé le plus de travail est sans doute la page commander, pour cette partie j'ai du créer un shortcode PHP pour que les prix soient à jour par rapport aux données entrées dans les articles WooCommerce, puis il m'a fallu faire du JavaScript pour faire le calcul et l'affichage du récapitulatif en fonction des articles sélectionnés. Et pour que les articles s'ajoutent correctement dans le panier, je me suis aussi servi de JavaScript pour que le lien de commande se mette à jour pour mettre les articles sélectionnés au panier.</p>
 					</>,
+				en: <>
+						<h3>Heliostart</h3>
+						<h4>Made at ADEVO Solutions</h4>
+						<ul>
+							<li>November 2019</li>
+							<li>Used technologies: Wordpress, PHP, JavaScript</li>
+						</ul>
+						<Img src={[
+							{img: "helio-1", alt: "Homepage"},
+							{img: "helio-2", alt: "Shop section"},
+							{img: "helio-3", alt: "Product presentation section"}
+						]}/>
+						<p>My first internship project at ADEVO Solutions is to design and build a website to promote and sell a Heliostart product and services. It is a box that allows to automate the operation of a sunbed using an Android application, it also offers website creation services</p>
+						<p>The project was based on a WordPress theme. The site being customized, it was necessary to modify the CSS a lot and a lot of elements were built in raw HTML</p>
+						<p>I also had to apply my graphic and web designer skills. I had a mock-up of what the website should look like, but I had to create a lot of graphic elements for the website, such as the logo, the background of the homepage, the pictograms and so on.</p>
+						<p>The that that required the most of the work is certainly the order page, for this part I had to create a PHP shortcode so that the prices are up to date with the data entered in WooCommerce articles, then I had to use JavaScript to do the calculation and display the summary according to the selected articles. And in order to add the items correctly to the cart, I also used JavaScript to update the order links to put in the select items in the cart.</p>
+					</>
+			},
 			preview: "http://heliostart.adevo.be"
 		}
 	},
 	{
-		title: "Ce site web",
+		title: {
+			fr: "Ce site web",
+			en: "This website"
+		},
 		techno: "ReactJS, SASS",
 		img: "fred",
 		url: {
@@ -157,7 +243,10 @@ export const PortfolioList = [
 		}
 	},
 	{
-		title: "Jeu du pendu",
+		title: {
+			fr: "Jeu du pendu",
+			en: "Hangman's game"
+		},
 		techno: "JavaScript",
 		img: "pendu",
 		url: {

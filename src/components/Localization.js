@@ -68,3 +68,31 @@ export const LocCareer = {
 		<h2>Career</h2>
 	</>
 }
+
+export const LocPortfolio = {
+	fr: <>
+		<h2>Mon portfolio</h2>
+	</>,
+	en: <>
+		<h2>My portfolio</h2>
+	</>
+}
+
+export const LocContact = {
+	fr: <>
+		<h2>Contactez-moi</h2>
+		<div className="contact-note" data-aos="fade-up">
+			<p>Je suis actuellement disponible pour tout recrutement.</p>
+			<p>Si vous êtes intéressé par mes compétences et que vous souhaitez me recruter ou si vous avez des questions à me poser, vous pouvez me contacter par e-mail ou par téléphone.</p>
+			<p>Je vous répondrai dès que possible.</p>
+		</div>
+	</>,
+	en: <>
+		<h2>Get in touch</h2>
+		<div className="contact-note" data-aos="fade-up">
+			<p>I am currently available for recruiting.</p>
+			<p>If you are interest about my skills and you wish to recruit me, or if you have quest to ask, you can contact me by e-mail or by phone.</p>
+			<p>I will get back to you as soon as possible</p>
+		</div>
+	</>
+}

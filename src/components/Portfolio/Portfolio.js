@@ -1,5 +1,6 @@
 import React from 'react'
 import { PortfolioList, PortfolioEntry } from './'
+import {LocPortfolio} from '../Localization'
 
 const Portfolio = props => {
 
@@ -10,6 +11,7 @@ const Portfolio = props => {
 				item={item}
 				animDelay={animDelay}
 				key={index}
+				lang={props.lang}
 			/>
 		)
 	})
@@ -17,7 +19,7 @@ const Portfolio = props => {
 	return (
 		<section id="portfolio">
 			<div className="wrapper" id="portfolio-animate-trigger">
-				<h2>Mon portfolio</h2>
+				{LocPortfolio[props.lang]}
 				<div className="portfolio-list">
 					{ listPortfolio }
 				</div>
