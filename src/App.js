@@ -35,10 +35,11 @@ const QueryApp = () => {
   const firstLoad = useRef(true)
 
   if (firstLoad.current) {
-    if (!query.get('lang')) {
+    const queryLang = query.get('lang')
+    if (!queryLang) {
       setQueryString(lang)
     } else {
-      setLang(query.get('lang'))
+      (['fr','en'].indexOf(queryLang) > -1) ? setLang(query.get('lang')) : setQueryString(lang)
     }
     firstLoad.current = false 
   }
