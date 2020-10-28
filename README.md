@@ -24,23 +24,32 @@ Comme c'est une partie où je pourrais rajouter du contenu par la suite, j'ai cr
 ```javascript
 export const TimelineList = [
 	{
-		type:"formation",
-		title:"Formation développeur web",
-		time:"avril - octobre 2019",
-		entreprise:"BeCode",
-		place:"Charleroi",
-		desc:"Formation intensive dans le développement front-end et back-end. On a appris à apprendre différents langages de programmation ainsi que les différents frameworks. On a également réalisé plusieurs travaux de groupe, participés aux événements tels que les Hackathons, Coder Dojos et autres...",
-		list:["Git", "HTML & CSS & SASS", "JavaScript, NodeJS, ReactJS", "PHP & MySQL & Wordpress"]
+		type:"entreprise",
+		entreprise:"ADEVO Solutions",
+		place:"Gilly",
+		
+		fr: {
+			title:"Stage développeur web",
+			time:"novembre 2019 - janvier 2020",
+			desc:<>
+					<p>Stage de fin de formation [...]</p>
+					<p>L'entreprise étant très petite, [...]</p>
+					<p>Ce stage m'a permis d'en découvrir [...] </p>
+				</>,
+			list:["HTML & CSS", "JavaScript", "PHP, WordPress, PrestaShop", "Photoshop", "Illustrator"],
+		},
+		en: {
+			title:"Web development internship",
+			time:"november 2019 - january 2020",
+			desc:<>
+					<p>The internship to end my training course [...]</p>
+					<p>The company being very small, [...]</p>
+					<p>This internship allowed me to discover [...]</p>
+				</>,
+			list:["HTML & CSS", "JavaScript", "PHP, WordPress, PrestaShop", "Photoshop", "Illustrator"],
+		}
+
 	},
-	{
-		type:"formation",
-		title:"Formation UX Webdesign",
-		time:"octobre 2018 - février 2019",
-		entreprise:"Technocité",
-		place:"Hornu",
-		desc:"Formation dans le design et intégration de site web en prenant compte de l’expérience utilisateur. ",
-		list:["HTML & CSS & SASS", "JavaScript", "Conception et intégration de sites web", "Méthode agile", "Responsive webdesign"]
-	}
     // Et ainsi de suite...     
 ]
 ```
@@ -52,14 +61,6 @@ Mon component de ligne du temps va donc créer d'autres sous-components par él�
 ### Mes compétences et mon portfolio
 
 Ces deux components vont suivre le même principe que la ligne du temps, un component principale, une liste et des sous components pour chaque entrée, cela simplifie beaucoup le travail et aussi pour ajouter de nouvelles entrées dans le futur.
-
-### Le formulaire
-
-C'était sans doute la partie la plus compliquée à mettre en place. Entre la découverte totale, la recherche de moyen pour le faire fonctionner et les complications techniques...
-
-Au départ je me suis servi de [Formstatic](https://formstatic.dev/) pour gérer le formulaire, mais je me suis dit que ce n'était pas top et que ça ne plairait pas à certains que les informations passent par un intermédiaire inconnu.
-
-J'ai donc fait mon propre traitement en PHP via [PHPMailer](https://github.com/PHPMailer/PHPMailer) pour gérer l'envoi du formulaire. J'ai créé une autre adresse e-mail qui se chargera de m'envoyer les messages du formulaire de mon site. Mon code PHP va sanitizer les informations et PHPMailer va pouvoir envoyer le message par le biais de ma seconde adresse e-mail qui m'enverra les messages du formulaire (étant donné que mon code PHP contiens les identifiants de mon second compte e-mail, la partie PHP du site n'est pas incluse dans mon dépôt)
 
 ### L'hébergement de mon site
 
@@ -73,7 +74,6 @@ Une fois que tout a été mis en place, j'ai acheté le nom de domaine [fred-van
 
 ## Conclusion
 
-Ce fut très plaisant de coder mon site en ReactJS, le JSX rend vraiment les choses beaucoup plus simples de mon point de vue et l'idée d'organiser chaque partie du site en components est une méthode de travail qui me plait beaucoup.
+Ce fut très plaisant de coder mon site en ReactJS, la ré-utilisation des component et le JSX rend vraiment les choses beaucoup plus simples de mon point de vue et l'idée d'organiser chaque partie du site en components est une méthode de travail qui me plait beaucoup.
 
 J'espère que mon site plaira aux visiteurs et encouragera à m'engager pour le métier de développeur web qui me plait beaucoup.
-

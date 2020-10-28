@@ -50,7 +50,7 @@ export const TimelineList = [
 		},
 		en: {
 			title:"Web dev training course",
-			time:"avril - octobre 2019",
+			time:"april - october 2019",
 			desc:<>
 					<p>An intensive training course on front-end and back-end web development. Unlike my previous training course at Technocité, this one is entirely focused on programming.</p>
 					<p>I learned to learn different programming languages and frameworks as well. The particularity on this training course is we have very few courses and we are on our own to follow the courses supervised by coaches.</p>
