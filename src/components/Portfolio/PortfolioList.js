@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Img = props =>{
+const Gallery = props =>{
 	const { src } = props
 	const galID = Math.floor(Math.random()*99999);
-	const img = src.map((item, index) => {
+	const galMap = src.map((item, index) => {
 		let thumb = `assets/img/portfolio/gallery/${item.img}-thumb.jpg`
-		let image = `assets/img/portfolio/gallery/${item.img}.jpg`
+		let href =`assets/img/portfolio/gallery/${item.img}.${item.format}`
 		return(
 			<div className="modal-image-container" key={index}>
-				<a href={image} data-lightbox={'gallery-'+galID} title={item.alt} data-title={item.alt}>
+				<a href={href} title={item.alt} data-lightbox={'gallery-'+galID} data-title={item.alt}>
 					<img src={thumb} alt={item.alt} key={index}/>
 				</a>
 				<p>{item.alt}</p>
@@ -18,13 +18,60 @@ const Img = props =>{
 	return(
 		<>
 			<div className="modal-gallery">
-				{ img }
+				{ galMap }
 			</div>
 		</>
 	)
 }
 
 export const PortfolioList = [
+	{
+		title: {
+			fr: "Addons Gmod",
+			en: "Gmod addons"
+		},
+		techno: "LUA",
+		img: "gmod",
+		url: {
+			note: {
+				fr: <>
+						<h3>Addons pour Garry's mod</h3>
+						<h4>Projet personnel</h4>
+						<ul>
+							<li>2020 - 2021</li>
+							<li>Technologies utilisés: LUA</li>
+						</ul>
+						<p>Lors de mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en LUA dans le jeu.</p>
+						<p>Les créations peuvent être publiés sur le Steam Workshop où tous le monde peuvent installer les addons créés.</p>
+						<h3>SYNTHETIK HUD</h3>
+						<h4>Interface de jeu animé</h4>
+						<Gallery src={[
+							{format: "gif", img: "synthud-1", alt:"Animation barre de vie"},
+							{format: "gif", img: "synthud-2", alt:"Animation du compteur de munitions"},
+							{format: "jpg", img: "synthud-3", alt:"La communauté Steam a adoré mon addon"}
+						]}/>
+						<p>Mon projet qui a connu un grand succès sur le Steam Workshop est un addon d'interface de jeu qui reprend d'un jeu vidéo du nom de SYNTHETIK.</p>
+						<p>C'est une interface qui est minimaliste et qui est animé fidèlement.</p>
+						<hr></hr>
+						<h3>FPV Drone</h3>
+						<h4>Drone FPV pilotable</h4>
+						<p>Mon hobby dans la vie réel est le pilotage de drone FPV. C'est un drone où il n'y a pas d'assistance de stabilisation, on peut tourner dans tous les axes et on porte un masque dans les yeux pour voir ce que le drone voit.</p>
+						<p>J'ai développé cet addon qui reproduit à peu près le pilotage d'un vrai drone FPV et où on peut s'amuser dans d'innombrable cartes créé par la communauté Garry's Mod.</p>
+						<p>Ce fut aussi ma toute première entitée programmée qui fallait à la fois gérer le coté client et le coté serveur de cet addon.</p>
+						<div className="modal-gallery">
+							<div className="video-wrapper">
+								<iframe width="560" 
+										height="315" 
+										src="https://www.youtube.com/embed/5zpn2cg4Jq8" 
+										frameborder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowfullscreen="allowfullscreen"></iframe>
+							</div>
+						</div>
+					</>
+			}
+		}
+	},
 	{
 		title: {
 			fr: "Fiche personnage",
@@ -42,10 +89,10 @@ export const PortfolioList = [
 							<li>Technologies utilisés: ReactJS, SASS</li>
 							<li>Projet en cours de développement</li>
 						</ul>
-						<Img src={[
-							{img: "dnd-1", alt:"Fiche de personnage"},
-							{img: "dnd-2", alt:"Classe d'armure"},
-							{img: "dnd-3", alt:"Jets de sauvegardes"}
+						<Gallery src={[
+							{format: "jpg", img: "dnd-1", alt:"Fiche de personnage"},
+							{format: "jpg", img: "dnd-2", alt:"Classe d'armure"},
+							{format: "jpg", img: "dnd-3", alt:"Jets de sauvegardes"}
 						]}/>
 						<p>Je participe avec un groupe d'amis à un jeu de rôle sur table Donjon & Dragons. Dans ce jeu, chacun à une fiche de son personnage sous format papier où est indiqué tous les informations sur son personnage.</p>
 						<p>Je me suis donc lancé l'idée de faire cette fiche de personnage sous format page web. Non seulement elle sera au format numérique mais en plus il fera les calculs automatiquement avec les différents statistiques associés.</p>
@@ -59,10 +106,10 @@ export const PortfolioList = [
 							<li>Used technologies: ReactJS, SASS </li>
 							<li>Project under development</li>
 						</ul>
-						<Img src={[
-							{img: "dnd-1", alt:"Character sheet"},
-							{img: "dnd-2", alt:"Armor class"},
-							{img: "dnd-3", alt:"Save throws"}
+						<Gallery src={[
+							{format: "jpg", img: "dnd-1", alt:"Character sheet"},
+							{format: "jpg", img: "dnd-2", alt:"Armor class"},
+							{format: "jpg", img: "dnd-3", alt:"Save throws"}
 						]}/>
 						<p>I'm participating with a group of friends in a Dungeons & Dragons tabletop role-playing game. In this game, each person has its own character sheet in paper where all the information about their characters is indicated.</p>
 						<p>So I came up with the idea of making this character sheet in web format. Not only will it be in digital format, but it will also do the calculations automatically with the different associated statistics.</p>
@@ -86,10 +133,10 @@ export const PortfolioList = [
 						<li>Technologies utilisés: PrestaShop, PHP, JavaScript</li>
 						<li>Projet partiellement réalisé en un mois</li>
 					</ul>
-					<Img src={[
-						{img: "shoe-1", alt:"Section d'accueil du site"},
-						{img: "shoe-2", alt:"Bannière de catégorie ajouté manuellement"},
-						{img: "shoe-3", alt:"Fiche d'un produit"}
+					<Gallery src={[
+						{format: "jpg", img: "shoe-1", alt:"Section d'accueil du site"},
+						{format: "jpg", img: "shoe-2", alt:"Bannière de catégorie ajouté manuellement"},
+						{format: "jpg", img: "shoe-3", alt:"Fiche d'un produit"}
 					]}/>
 					<p>J'ai commencé ce projet lors du dernier mois de mon stage chez ADEVO, je n'ai pu faire ce projet que partiellement.</p>
 					<p>Ce projet consistait à faire un site boutique pour Shoebiz & Latino Mode qui vends des chaussures et vêtements pour femme de haut de gamme. Ce projet n'étant pas du sur-mesure, on s'est principalement basé sur un thème PrestaShop avec des modifications moins important que Heliostart</p>
@@ -106,10 +153,10 @@ export const PortfolioList = [
 						<li>Used technologies: PrestaShop, PHP, JavaScript</li>
 						<li>Project partially completed in one month</li>
 					</ul>
-					<Img src={[
-						{img: "shoe-1", alt:"Home section of the website"},
-						{img: "shoe-2", alt:"Manually added category banner"},
-						{img: "shoe-3", alt:"Product sheet"}
+					<Gallery src={[
+						{format: "jpg", img: "shoe-1", alt:"Home section of the website"},
+						{format: "jpg", img: "shoe-2", alt:"Manually added category banner"},
+						{format: "jpg", img: "shoe-3", alt:"Product sheet"}
 					]}/>
 					<p>I started this project during the last month of my internship at ADEVO, so I was able to do this project only partially.</p>
 					<p>This project consisted of creating a web shop for Shoebiz & Latino Mode that sells high-end women's shoes and clothing. Since this project was not customized, it was mainly based on a PrestaShop theme with minor changes compared to Heliostart</p>
@@ -135,10 +182,10 @@ export const PortfolioList = [
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Projet auquel j'ai participé au développement</li>
 						</ul>
-						<Img src={[
-							{img: "iso-1", alt: "Section ligne du temps modifié"},
-							{img: "iso-2", alt: "Panneau latérale que j'ai créé"},
-							{img: "iso-3", alt:"Section d'accueil que j'ai adapté en responsive"}
+						<Gallery src={[
+							{format: "jpg", img: "iso-1", alt: "Section ligne du temps modifié"},
+							{format: "jpg", img: "iso-2", alt: "Panneau latérale que j'ai créé"},
+							{format: "jpg", img: "iso-3", alt:"Section d'accueil que j'ai adapté en responsive"}
 						]}/>
 						<p>Contrairement à Heliostart, ceci est un projet auquel j'ai apporté mon soutien, j'ai principalement apporté des modifications et de nouvelles fonctionnalités au site.</p>
 						<p>En effet, j'ai créé un nouveau module pour le site qui est le panneau latéral, je l'ai créée de toute pièce, on peut y insérer les modules qu'on veut. Ainsi il sert de petit formulaire pour que le client puisse se faire appeler par l'entreprise dans la tranche horaire qu'il veut.</p>
@@ -153,10 +200,10 @@ export const PortfolioList = [
 							<li>Used technologies: Wordpress, PHP, JavaScript</li>
 							<li>Project that I've participated</li>
 						</ul>
-						<Img src={[
-							{img: "iso-1", alt: "Modified timeline section"},
-							{img: "iso-2", alt: "Sidebar I've made"},
-							{img: "iso-3", alt:"Reworked home section that I've adapted to responsive"}
+						<Gallery src={[
+							{format: "jpg", img: "iso-1", alt: "Modified timeline section"},
+							{format: "jpg", img: "iso-2", alt: "Sidebar I've made"},
+							{format: "jpg", img: "iso-3", alt:"Reworked home section that I've adapted to responsive"}
 						]}/>
 						<p>Unlike Heliostart, this was a project that I have supported, I mainly made changes and new features to the website.</p>
 						<p>Indeed, I created a new module for the website, which is the side panel, I created it from scratch, we can insert the modules we want. Thus it serves as a small form so that the customer can be called by the company in the time slot he wants.</p>
@@ -180,10 +227,10 @@ export const PortfolioList = [
 							<li>Technologies utilisés: Wordpress, PHP, JavaScript</li>
 							<li>Durée du projet: 2 mois</li>
 						</ul>
-						<Img src={[
-							{img: "helio-1", alt: "Page d'accueil"},
-							{img: "helio-2", alt: "Section boutique"},
-							{img: "helio-3", alt: "Section de présentation du produit"}
+						<Gallery src={[
+							{format: "jpg", img: "helio-1", alt: "Page d'accueil"},
+							{format: "jpg", img: "helio-2", alt: "Section boutique"},
+							{format: "jpg", img: "helio-3", alt: "Section de présentation du produit"}
 						]}/>
 						<p>Mon premier projet de stage chez ADEVO Solutions consiste à concevoir et à construire un site internet pour promouvoir et vendre un produit et des services Heliostart. C'est un boîtier permettant d'automatiser le fonctionnement d'un banc solaire à l'aide d'une application Android, il propose également des services de création de sites web.</p>
 						<p>Le projet s'est basé d'un thème Wordpress. Le site étant sur-mesure, il a fallu beaucoup modifier dans le CSS et pas mal d'éléments ont étés construite en HTML brut.</p>
@@ -198,10 +245,10 @@ export const PortfolioList = [
 							<li>Used technologies: Wordpress, PHP, JavaScript</li>
 							<li>Project duration: 2 months</li>
 						</ul>
-						<Img src={[
-							{img: "helio-1", alt: "Homepage"},
-							{img: "helio-2", alt: "Shop section"},
-							{img: "helio-3", alt: "Product presentation section"}
+						<Gallery src={[
+							{format: "jpg", img: "helio-1", alt: "Homepage"},
+							{format: "jpg", img: "helio-2", alt: "Shop section"},
+							{format: "jpg", img: "helio-3", alt: "Product presentation section"}
 						]}/>
 						<p>My first internship project at ADEVO Solutions is to design and build a website to promote and sell a Heliostart product and services. It is a box that allows to automating the operation of a sunbed using an Android application, it also offers website creation services.</p>
 						<p>The project was based on a WordPress theme. The site being customized, it was necessary to modify the CSS a lot and a lot of elements were built in raw HTML</p>

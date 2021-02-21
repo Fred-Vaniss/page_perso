@@ -47,8 +47,8 @@ const PortfolioEntry = props => {
 							<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => toggleModal(false, e)}/></button>
 							{item.url.note[props.lang]}
 							<div className="modal-bottom">
-								{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">Page du projet</a>} <br/>
-								<button className="form-submit modal-close-bottom" onClick={e => toggleModal(false, e)}>Fermer</button>
+								{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">{props.lang === "fr" ? "Page du projet" : "Project page"}</a>} <br/>
+								<button className="form-submit modal-close-bottom" onClick={e => toggleModal(false, e)}>{props.lang === "fr" ? "Fermer" : "Close"}</button>
 							</div>
 						</div>
 					</div>
