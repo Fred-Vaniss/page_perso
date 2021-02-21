@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { PortfolioList, PortfolioEntry } from './'
 import {LocPortfolio} from '../Localization'
 
 const Portfolio = props => {
+
+	const [modal, setModal] = useState(null)
 
 	const listPortfolio = PortfolioList.map((item, index = 0) => {
 		let animDelay = 100 * index;
@@ -12,6 +14,9 @@ const Portfolio = props => {
 				animDelay={animDelay}
 				key={index}
 				lang={props.lang}
+				open={modal}
+				setOpen={setModal}
+				index={index}
 			/>
 		)
 	})

@@ -535,9 +535,12 @@ a.portfolio-link, .portfolio-link span{
 
 	z-index: 1000;
 
-	transition: opacity .3s, visibility .3s;
-
+	
 	overflow-y: scroll;
+	
+	&.transition{
+		transition: opacity .3s, visibility .3s;
+	}
 
 	&.shown{
 		visibility: visible;
