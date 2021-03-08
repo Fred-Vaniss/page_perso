@@ -9,14 +9,13 @@ export const TimelineList = [
 	{
 		type:"entreprise",
 		entreprise:"Why Agency",
-		list:["HTML & CSS", "JavaScript", "PHP, WordPress"],
+		list:["HTML & CSS", "JavaScript", "PHP, WordPress, Grav"],
 		
 		fr: {
 			time:"2020 - présent",
 			title:"Développeur web",
 			desc:<>
-					<p>Travail en freelance dans le développement de sites WordPress.</p>
-					<p>J'interviens principalement en refort lorsque l'équipe fait face à un problème difficile à résoudre, que ce soit dans la mise en page CSS, des bugs de script ou de module WordPress.</p>
+					<p>Travail en freelance dans le développement de sites WordPress et Grav.</p>
 				</>
 			
 		},
@@ -25,7 +24,6 @@ export const TimelineList = [
 			title:"Web developer",
 			desc:<>
 					<p>Freelance work in the development of WordPress websites.</p>
-					<p>I intervene mainly as backup when the team faces a problem that is difficult to solve, whether it is in the CSS layout, script or WordPress plugin bugs.</p>
 				</>
 		}
 	},

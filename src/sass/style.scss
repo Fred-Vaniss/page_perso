@@ -621,7 +621,15 @@ a.portfolio-link, .portfolio-link span{
 }
 
 .modal-bottom{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
 	margin-top: 1em;
+
+	& a, & button {
+		margin: 5px 0;
+	}
 }
 
 .modal-preview-bottom{

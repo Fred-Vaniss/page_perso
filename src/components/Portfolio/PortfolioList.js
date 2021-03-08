@@ -27,6 +27,62 @@ const Gallery = props =>{
 export const PortfolioList = [
 	{
 		title: {
+			fr: "Template Grav",
+			en: "Grav template"
+		},
+		techno: "PHP, Twig",
+		img: "grav",
+		url:{
+			note: {
+				fr: <>
+					<h3>Test de construction d'un template pour Grav</h3>
+					<h4>Projet de test pour Why Agency</h4>
+					<ul>
+						<li>Février 2021</li>
+						<li>Technologies utilisés: PHP, Twig</li>
+						<li>Projet terminé</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "grav-1", alt:"Aperçu du site via la Back-Office"},
+						{format: "jpg", img: "grav-2", alt:"Edition du module de services"},
+						{format: "jpg", img: "grav-3", alt:"Edition du module de portfolio"},
+					]}/>
+					<p>Avec Why Agency, on a eu un client qui a eu la particularité de nous demander un site web basé sur un CMS léger et écologique. Nous qui travaillons sur WordPress, on sait qu'il nous faudrait trouver un autre CMS.</p>
+					<p>On a approché l'option de Grav, c'est un CMS open source basé sur Symfony, qui est Flat-File et il utilise le Markdown pour les articles et le contenu</p>
+					<p>Grav étant un CMS beaucoup moins connu que WordPress, on a du coup beaucoup moins d'options pour des thèmes déjà construits. J'ai donc proposé à l'équipe de tenter l'approche de construire soi-même un thème Grav à partir d'un bête thème HTML statique.</p>
+					<p>Je me suis donc lancé sur ce test à partir <a href="https://startbootstrap.com/theme/creative" target="_blank" rel="noopener noreferrer" title="Thème d'origine 'Creative'">d'un thème gratuit Bootstrap "Creative"</a>. Je n'avais absolument aucune expérience sur la construction d'un thème, ni sur le langage Twig. C'était un total découvert pour moi et il m'a fallu beaucoup me renseigner sur la documentation officiele de Grav et observer comment les autres thèmes ont étés construits.</p>
+					<p>Avant de me lancer sur la conversion du HTML en thème Twig, j'ai d'abord analysé la structure HTML afin de déterminer comment le découper, quels éléments qui vont être répétés pour afficher différents contenus sous une même structure et comment les données vont êtres sauvegardés.</p>
+					<p>Ça m'a pris une journée entière pour construire ce thème. Au fur et à mesure je découvre de nouveaux trucs, j'ai même pris le temps de personnaliser les panneaux du Back-Office selon le module.</p>
+					<p>Ce test fut couronné de succès, j'ai appris pas mal de choses sur ce test et on va pouvoir se créer d'autres thèmes que ce qui est déjà proposé.</p>
+				</>,
+				en: <>
+					<h3>Grav template building test</h3>
+					<h4>Test project for Why Agency</h4>
+					<ul>
+						<li>February 2021</li>
+						<li>Used technologies: PHP, Twig</li>
+						<li>Finished project</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "grav-1", alt:"Website preview from the Back-Office"},
+						{format: "jpg", img: "grav-2", alt:"Services module editing"},
+						{format: "jpg", img: "grav-3", alt:"Portfolio module editing"},
+					]}/>
+					<p>With Why Agency, we had a client who had the particularity of asking a website based on a lightweight and environmentally friendly CMS. We work on WordPress and we knew that we have to find another CMS.</p>
+					<p>We approached the Grav option, it's an open source CMS based on Symfony, which is Flat-File and uses Markdown for articles and content.</p>
+					<p>Grav being CMS less known than WordPress, we have fewer options for themes already built. So I suggested to the team to try the approach of building a Grav theme ourselves from a static HTML theme.</p>
+					<p>So I started this test using <a href="https://startbootstrap.com/theme/creative" target="_blank" rel="noopener noreferrer" title="Thème d'origine 'Creative'">a free Bootstrap theme "Creative"</a>. I had absolutely no experience on building a theme nor the Twig language. It was a total discovery for me and it took me a lot of research on the official Grav documentation and observing how the other themes were constructed.</p>
+					<p>Before beginning to convert the HTML into Twig theme, I first analyzed the HTML layout to determine how to cut it, what elements will be repeated to display different contents under the same structure, and how the data will be saved.</p>
+					<p>It took me a while day to build this theme. As I discover new tricks, I even took the time to customize the Back-Office panels according to the module.</p>
+					<p>This test was successful, I learned a lot about this test and we will be able to create other themes than what is already proposed.</p>
+				</>
+			},
+			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
+			preview: "https://fred-vaniss.be/grav-site/"
+		}
+	},
+	{
+		title: {
 			fr: "Addons Gmod",
 			en: "Gmod addons"
 		},
