@@ -403,7 +403,7 @@ export const PortfolioList = [
 					<ul>
 						<li>2019</li>
 						<li>Technologies utilisés: HTML, JavaScript</li>
-						<li>Exercice terminée</li>
+						<li>Exercice terminé en 3 semaines</li>
 					</ul>
 					<Gallery src={[
 						{format: "jpg", img: "cine/cine-1", alt: "Header du site"},
@@ -439,15 +439,6 @@ export const PortfolioList = [
 		}
 	},
 	{
-		title: "Todolist",
-		techno: "ReactJS",
-		img: "todo",
-		url: {
-			git: "https://github.com/Fred-Vaniss/react-todo-list",
-			preview: "https://todolist-fred-vaniss.netlify.com/"
-		}
-	},
-	{
 		title: {
 			fr: "Jeu du pendu",
 			en: "Hangman's game"
@@ -455,6 +446,44 @@ export const PortfolioList = [
 		techno: "JavaScript",
 		img: "pendu",
 		url: {
+			note: {
+				fr:<>
+					<h3>Jeu du pendu</h3>
+					<h4>Projet individuel chez BeCode</h4>
+					<ul>
+						<li>2019</li>
+						<li>Technologies utilisés: HTML, SASS, JavaScript</li>
+						<li>Projet terminé en un mois</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "hangman/hangman-1", alt: "Exercice demandé"},
+						{format: "jpg", img: "hangman/hangman-2", alt: "Première phase de développement"},
+						{format: "gif", img: "hangman/hangman-3", alt: "Résultat final (GIF)"}
+					]}/>
+					<p>C'était à la base juste un petit exercice à base de <span className="italic">"prompt"</span> pour demander à la personne de choisir une lettre et d'afficher dans la console les lettres devinées et le nombre d'essais restants.</p>
+					<p>Sauf que je suis allé beaucoup plus loin que ce qui était demandé dans l'exercice, j'ai utilisé la page HTML pour interagir avec le jeu alors qu'on n'avais pas encore évoqué le DOM en cours. Au fur et à mesure que je progresse, j'ai même ajouté des mots aléatoires, des mots complexes avec des tirets, apostrophes et des accents. Pour finir, j'ai mis une liste gigantesque dans un fichier JSON.</p>
+					<p>Puis j'ai été encore plus loins en affichant le fameux bonhomme allumette au fur et à mesure qu'on épuise le nombre d'essais ainsi qu'un clavier virtuel qui change de couleur si la lettre figure dans le mot ou pas.</p>
+					<p>Plus de détails dans le README de mon dépôt Github.</p>
+				</>,
+				en: <>
+					<h3>Hangman's game</h3>
+					<h4>Individual project at BeCode</h4>
+					<ul>
+						<li>2019</li>
+						<li>Used technologies: HTML, SASS, JavaScript</li>
+						<li>Project finished in a month</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "hangman/hangman-1", alt: "Asked exercice"},
+						{format: "jpg", img: "hangman/hangman-2", alt: "First phase of development"},
+						{format: "gif", img: "hangman/hangman-3", alt: "Final result (GIF)"}
+					]}/>
+					<p>It was at first just a little exercise with a <span className="italic">"prompt"</span> that asks the person to choose a letter and display in the console the guessed letters and the number of trials remaining.</p>
+					<p>Except that I went much further than what was asked for in the exercise, I used the HTML page to interact with the game while we had not mentioned the DOM in the course. As I progressed, I even added random words, complex words with dashes, apostrophes and accents. Finally, I but a gigantic list in a JSON file.</p>
+					<p>Then I went even further by displaying the famous stickman as we use the of trials and a virtual keyboard that changes color whether the letter is in the word or not.</p>
+					<p>More details in the README of my Github repository. (in French)</p>
+				</>
+			},
 			git: "https://github.com/Fred-Vaniss/jeu-pendu",
 			preview: "https://fred-vaniss.github.io/jeu-pendu/"
 		}
