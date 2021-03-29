@@ -40,7 +40,7 @@ export const PortfolioList = [
 					<ul>
 						<li>Février 2021</li>
 						<li>Technologies utilisés: PHP, Twig</li>
-						<li>Projet terminé</li>
+						<li>Projet terminé en une journée.</li>
 					</ul>
 					<Gallery src={[
 						{format: "jpg", img: "grav-1", alt:"Aperçu du site via la Back-Office"},
@@ -61,7 +61,7 @@ export const PortfolioList = [
 					<ul>
 						<li>February 2021</li>
 						<li>Used technologies: PHP, Twig</li>
-						<li>Finished project</li>
+						<li>Project finished in one day.</li>
 					</ul>
 					<Gallery src={[
 						{format: "jpg", img: "grav-1", alt:"Website preview from the Back-Office"},
@@ -362,6 +362,32 @@ export const PortfolioList = [
 		techno: "ReactJS, SASS",
 		img: "fred",
 		url: {
+			note:{
+				fr: <>
+					<h3>Mon site personnel</h3>
+					<ul>
+						<li>2019-2021</li>
+						<li>Technologies utilisés: ReactJS, Sass</li>
+						<li>Projet en constant évolution</li>
+					</ul>
+					<p>Je me suis lancé dans ce projet de création de mon propre site web afin de m'exposer en ligne et pour pouvoir montrer mes projets réalisés. Cela m'a permis de mettre un plus en pratique le ReactJS et de découvrir les procédés d'hébergement de site internet.</p>
+					<p>Je suis donc passé de la création de la maquette vers le développement jusqu'à l'hébergement en ligne de mon site.</p>
+					<p>Ce qui m'a motivé à le développer en React c'est sa rapidité et la possibilité d'utiliser des components réutilisable pour afficher plusieurs éléments avec la même disposition, ce qui est extrêmement utile pour afficher plusieurs éléments de mon parcous et de mon portfolio.</p>
+					<p>Cela m'a également permis de découvrir le processus d'hébergement en ligne. J'ai pris un VPS et un nom de domaine chez OVH, j'ai donc dû manuellement installer les prérequis via le terminal Ubuntu de mon VPS et d'envoyer mon site par FTP.</p>
+				</>,
+				en: <>
+					<h3>My personal website</h3>
+					<ul>
+						<li>2019-2021</li>
+						<li>Used technologies: ReactJS, Sass</li>
+						<li>Project in constant evolution</li>
+					</ul>
+					<p>I launched this project of creating my own website in order to exhibit myself online and to showcase my project. This allowed me to put more ReactJS into practice and to discover the process of hosting websites.</p>
+					<p>So I went from creating the mock-up to the development and the online hosting of my website.</p>
+					<p>What motivated me to develop it in React is its speed and the ability to use reusable components to display multiple items with the same layout, which is extremely useful for displaying my career and portfolio items.</p>
+					<p>It also allowed me to discover the online hosting process. I took a VPS and a domain name from OVH, so I had to manually install the prerequisite through the Ubuntu terminal of my VPS and send my website through FTP.</p>
+				</>
+			},
 			git: "https://github.com/Fred-Vaniss/page_perso"
 		}
 	},
