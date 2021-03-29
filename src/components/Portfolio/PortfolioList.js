@@ -396,6 +396,44 @@ export const PortfolioList = [
 		techno: "HTML, CSS, Javascript",
 		img: "cine",
 		url: {
+			note:{
+				fr:<>
+					<h3>AllezCiné</h3>
+					<h4>Exercice de groupe chez BeCode</h4>
+					<ul>
+						<li>2019</li>
+						<li>Technologies utilisés: HTML, JavaScript</li>
+						<li>Exercice terminée</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "cine/cine-1", alt: "Header du site"},
+						{format: "jpg", img: "cine/cine-2", alt: "Films en vedette"},
+						{format: "jpg", img: "cine/cine-3", alt: "Détails d'un film"}
+					]}/>
+					<p>Cet exercice de groupe a eu comme principal but de mettre en pratique la répartition des tâches dans un travail de groupe, l'utilisation de GIT à plusieurs, ainsi que la mise en pratique les requêtes AJAX.</p>
+					<p>Le but de cet exercice était de reproduire la maquette d'un site et qu'il soit fonctionnel. Pour cela on a utilisé l'API de <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" title="The Movie Database">The Movie Database</a> pour fournir une liste et les détails des films à jour.</p>
+					<p>Les différents membres de mon groupe ont eu la tâche se s'occuper de différentes parties du site tandis que je me suis occupé des requêtes de l'API et d'afficher la liste des films et les informations.</p>
+					<p>La seule grosse difficulté qu'on a eue était une erreur de coordination au début du projet mais après cela, tout s'est bien passé sans encombre.</p>
+				</>,
+				en:<>
+					<h3>AllezCiné</h3>
+					<h4>Group exercice at BeCode</h4>
+					<ul>
+						<li>2019</li>
+						<li>Used technologies: HTML, JavaScript</li>
+						<li>Exercice terminée</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "cine/cine-1", alt: "Header du site"},
+						{format: "jpg", img: "cine/cine-2", alt: "Films en vedette"},
+						{format: "jpg", img: "cine/cine-3", alt: "Détails d'un film"}
+					]}/>
+					<p>The main purpose of this group exercice was to put into practice the allocation of tasks in a group work, the use of GIT with several people and the practical application of AJAX requests</p>
+					<p>The goal of this exercice was to reproduce a mock-up of a website and make it functional. For this, we used <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" title="The Movie Database">The Movie Database</a> API to provide an up-to-date list and details of the movies.</p>
+					<p>The different memeber of my group had the task of taking care of different parts of the website while I took care of the API queries and displaying the list of movies and information.</p>
+					<p>The only big problem we had was a miscoordination at the start of the project, but after that, everything went smoothly.</p>
+				</>
+			},
 			git: "https://github.com/Fred-Vaniss/site-allezcine",
 			preview: "https://fred-vaniss.github.io/site-allezcine/",
 		}
