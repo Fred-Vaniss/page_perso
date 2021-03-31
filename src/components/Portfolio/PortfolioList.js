@@ -411,7 +411,7 @@ export const PortfolioList = [
 						{format: "jpg", img: "cine/cine-3", alt: "Détails d'un film"}
 					]}/>
 					<p>Cet exercice de groupe a eu comme principal but de mettre en pratique la répartition des tâches dans un travail de groupe, l'utilisation de GIT à plusieurs, ainsi que la mise en pratique les requêtes AJAX.</p>
-					<p>Le but de cet exercice était de reproduire la maquette d'un site et qu'il soit fonctionnel. Pour cela on a utilisé l'API de <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" title="The Movie Database">The Movie Database</a> pour fournir une liste et les détails des films à jour.</p>
+					<p>Le but de cet exercice était de reproduire la maquette d'un site et qu'il soit fonctionnel. Pour cela on a utilisé l'API de <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer" title="The Movie Database">The Movie Database</a> pour fournir une liste des films à jour ainsi que les détails </p>
 					<p>Les différents membres de mon groupe ont eu la tâche se s'occuper de différentes parties du site tandis que je me suis occupé des requêtes de l'API et d'afficher la liste des films et les informations.</p>
 					<p>La seule grosse difficulté qu'on a eue était une erreur de coordination au début du projet mais après cela, tout s'est bien passé sans encombre.</p>
 				</>,
@@ -493,6 +493,28 @@ export const PortfolioList = [
 		techno: "HTML, SASS, JavaScript",
 		img: "mel",
 		url: {
+			note: {
+				fr: <>
+					<h3>Mél'égumes</h3>
+					<h4>Projet de groupe chez Technocité</h4>
+					<ul>
+						<li>2019</li>
+						<li>Technologies utilisés: HTML, SASS, JavaScript</li>
+						<li>Projet terminé en trois mois</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "mel/mel-1", alt: "Page d'accueil"},
+						{format: "jpg", img: "mel/mel-2", alt: "Un site responsive"},
+						{format: "jpg", img: "mel/mel-3", alt: '"Raconte moi des salades"'}
+					]}/>
+					<p>Ce site a été développé dans le cadre d'une formation en UX Webdesign chez Technocité en partenariat avec Design Innovation</p>
+					<p>Le projet consiste à concevoir et de développer un site internet pour notre cliente Mélanie pour promouvoir son entreprise de permaculture</p>
+					<p>La cliente n'ayant ni contenu, ni charte graphique, on a dû tout créer de nous-mêmes par équipes de trois personnes</p>
+					<p>Mes collègues se sont occupés de la mise en page et du contenu graphique et textuels tandis que je me suis occupé de coder le site.</p>
+				</>,
+				en: <>
+				</>
+			},
 			git: "https://github.com/Fred-Vaniss/site-mel-egumes",
 			preview: "https://fred-vaniss.github.io/site-mel-egumes/"
 		}
