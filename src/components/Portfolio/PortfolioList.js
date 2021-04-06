@@ -507,12 +507,28 @@ export const PortfolioList = [
 						{format: "jpg", img: "mel/mel-2", alt: "Un site responsive"},
 						{format: "jpg", img: "mel/mel-3", alt: '"Raconte moi des salades"'}
 					]}/>
-					<p>Ce site a été développé dans le cadre d'une formation en UX Webdesign chez Technocité en partenariat avec Design Innovation</p>
-					<p>Le projet consiste à concevoir et de développer un site internet pour notre cliente Mélanie pour promouvoir son entreprise de permaculture</p>
-					<p>La cliente n'ayant ni contenu, ni charte graphique, on a dû tout créer de nous-mêmes par équipes de trois personnes</p>
-					<p>Mes collègues se sont occupés de la mise en page et du contenu graphique et textuels tandis que je me suis occupé de coder le site.</p>
+					<p>Ce site a été développé dans le cadre d'une formation en UX Webdesign chez Technocité en partenariat avec Design Innovation.</p>
+					<p>Le projet consiste à concevoir et de développer un site internet pour notre cliente Mélanie pour promouvoir son entreprise de permaculture Mél'égumes.</p>
+					<p>La cliente n'ayant ni contenu, ni charte graphique, on a dû tout créer de nous-mêmes par équipes de trois personnes.</p>
+					<p>Mes collègues se sont occupés de la mise en page, du contenu graphique et textuels tandis que je me suis occupé de coder le site.</p>
 				</>,
 				en: <>
+					<h3>Mél'égumes</h3>
+					<h4>Group project at Technocité</h4>
+					<ul>
+						<li>2019</li>
+						<li>Used technologies: HTML, SASS, JavaScript</li>
+						<li>Project finished in three months</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "mel/mel-1", alt: "Homepage"},
+						{format: "jpg", img: "mel/mel-2", alt: "A responsive website"},
+						{format: "jpg", img: "mel/mel-3", alt: '"Tell me some salads (french expression)"'}
+					]}/>
+					<p>This website was developed as part of a UX Webdesign training course at Technocité in partnership with Design Innovation.</p>
+					<p>The project consists of designing and developing a website for or client Mélanie to promote her permaculture business Mél'égumes.</p>
+					<p>Since the client didn't have any content or graphics, we had to crate everything ourselves in teams of three people.</p>
+					<p>My colleagues took care of the layout, the graphic and textual content, while I took care of the coding of the website.</p>
 				</>
 			},
 			git: "https://github.com/Fred-Vaniss/site-mel-egumes",
@@ -524,24 +540,46 @@ export const PortfolioList = [
 		techno: "HTML, SASS, JavaScript",
 		img: "artifact",
 		url: {
-			// note:	<>
-			// 			<h3>Artifact Rush</h3>
-			// 			<h4>Projet de fin d'étude de bachelier</h4>
-			// 			<ul>
-			// 				<li>Janvier 2019</li>
-			// 				<li>Technos: HTML, SASS, JavaScript</li>
-			// 				<li>Durée du projet: 2 mois</li>
-			// 			</ul>
-			// 			<Img src={[
-			// 				{img: "artifact-1", alt: "Section d'accueil"},
-			// 				{img: "artifact-2", alt: "Section portfolio"},
-			// 				{img: "artifact-3", alt: "Détail d'un article dans un modal"}
-			// 			]}/>
-			// 			<p>Je me suis lancé sur ce projet de recréation de ce site pour mettre en application ce que j'avais appris en UX Webdesign chez Technocité.</p>
-			// 			<p>C'est une refonte de <a href="https://speedy-vongofast.github.io/artifact-rush-website/" target="_blank" rel="noopener noreferrer nofollow">mon site de projet de fin d'études (créé en 2017)</a> qui à la base était juste un thème Bootstrap que j'avais tout simplement modifié, je n'avais quasi aucune connaissance dans le développement web à cette époque.</p>
-			// 			<p>Cette refonte n'a pas Bootstrap et toutes les fonctionnalités du site sont faites en JavaScript pur. J'ai également fait des améliorations sur la mise en page et elle est parfaitement responsive.</p>
-						
-			// 		</>,
+			note:{
+				fr: <>
+						<h3>Artifact Rush</h3>
+						<h4>Projet de fin d'étude de bachelier</h4>
+						<ul>
+							<li>Première création: 2017</li>
+							<li>Refonte du site: 2019</li>
+							<li>Technos: HTML, SASS, JavaScript</li>
+							<li>Durée du projet: 2 mois</li>
+						</ul>
+						<Gallery src={[
+							{format: "jpg", img: "artifact-1", alt: "Section d'accueil"},
+							{format: "jpg", img: "artifact-2", alt: "Section portfolio"},
+							{format: "jpg", img: "artifact-3", alt: "Détail d'un article dans un modal"}
+						]}/>
+						<p>C'est une refonte complète de <a href="https://speedy-vongofast.github.io/artifact-rush-website/" target="_blank" rel="noopener noreferrer nofollow">mon site de projet de fin d'études (créé en 2017)</a>. </p>
+						<p>À cet époque, je n'avais quasi aucune conaissance sur la création d'un site web et des bonnes pratiques, du coup je m'étais contenté juste de prendre un thème Bootstrap et le me modifier, le résultat au format mobile était catastrophique.</p>
+						<p>Je me suis donc lancé sur ce re-créer mon site à partir de zéro afin de mettre en application ce que j'avais appris en UX Webdesign chez Technocité.</p>
+						<p>Cette refonte ne dépends pas de Bootstrap et toutes les fonctionnalités du site sont faites en JavaScript brut. J'ai également fait des améliorations sur la mise en page et elle est désormais parfaitement responsive.</p>
+					</>,
+				en: <>
+						<h3>Artifact Rush</h3>
+						<h4>Bachelor End-of-study work</h4>
+						<ul>
+							<li>First creation: 2017</li>
+							<li>Re-creation: 2019</li>
+							<li>Techs: HTML, SASS, JavaScript</li>
+							<li>Project duration: 2 months</li>
+						</ul>
+						<Gallery src={[
+							{format: "jpg", img: "artifact-1", alt: "Home section"},
+							{format: "jpg", img: "artifact-2", alt: "Portfolio section"},
+							{format: "jpg", img: "artifact-3", alt: "Article detail in a modal"}
+						]}/>
+						<p>This is a complete recreation of <a href="https://speedy-vongofast.github.io/artifact-rush-website/" target="_blank" rel="noopener noreferrer nofollow">my end-of-study project website (created in 2017)</a>. </p>
+						<p>At that time, I had almost no knowledge about creating a website and best practices, so I had just taken a Bootstrap theme and changed it, the result in mobile format was quite catastrophic.</p>
+						<p>So I embarked on this project to recreate my website from scratch in order to apply what I've learned in UX Webdesign course at Technocité.</p>
+						<p>This recreation doesn't depend on Bootstrap and all the features of the website are made in vanilla JavaScript. I also made some improvements on the layout and it is now perfectly responsive.</p>
+				</>
+			},	
 			git: "https://github.com/Fred-Vaniss/artifact-rush-website",
 			preview: "https://fred-vaniss.github.io/artifact-rush-website/"
 		}
