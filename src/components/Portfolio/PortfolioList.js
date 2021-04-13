@@ -27,6 +27,36 @@ const Gallery = props =>{
 export const PortfolioList = [
 	{
 		title: {
+			fr: "Suivi d'objectifs",
+			en: "Objective tracker"
+		},
+		techno: "React, SASS",
+		img: "bt-tracker",
+		url:{
+			note: {
+				fr: <>
+					<h3>Suivir d'objetifs limités dans le temps</h3>
+					<h4>Projet personnel</h4>
+					<ul>
+						<li>Février 2021</li>
+						<li>Technologies utilisés: React, SASS</li>
+						<li>Projet terminé en deux journées</li>
+					</ul>
+					<p>Je joue beaucoup aux jeux vidéos et il existe un concept qu'on appelle "Battlepass", ou Pass de Combat. C'est un objectif limité dans le temps (généralement trois mois) où on peut gagner des récompenses supplémentaire.</p>
+					<p>Je me suis dis du coup pourquoi ne pas me faire une appli pour avoir un suivi et qui me permettrais de déterminer si je suis dans le temps ou si je suis en retard. C'était aussi le projet idéal pour me remettre dans le bain de React.</p>
+					<p>Cet appli permets de créer plusieurs suivis avec une date de début, une date de fin, une heure, un nombre déterminant l'objectif à atteindre et la quantité que les bouttons + et - incrémentent</p>
+					<p>Les barres de progressions ont une petite barre de temps qui défile de gauche à droite en fonction du temps restant, c'est ce qui détermine si on est en avance ou en retard par rapport au pourcentage de la progression, c'est un concept que Diablo III m'a inspiré.</p>
+					<p>Et pour aller plus loins, j'ai aussi ajouté la possibilité de réorganiser les différents entrées, de les éditer ainsi que de les supprimer.</p>
+				</>,
+				en: <>
+				</>
+			},
+			git: "https://github.com/Fred-Vaniss/battlepass-tracker",
+			preview: "https://fred-vaniss.be/timed-progress-tracker"
+		}
+	},
+	{
+		title: {
 			fr: "Template Grav",
 			en: "Grav template"
 		},
