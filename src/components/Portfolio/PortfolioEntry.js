@@ -39,13 +39,15 @@ const PortfolioEntry = props => {
 		if (open !== index || !item.url.note) return null
 		return ReactDom.createPortal(
 			<>
+				<div className="modal-close-container">
 					<button className="modal-close"><FontAwesomeIcon icon={faTimes} onClick={e => toggleModal(false, e)}/></button>
-					{item.url.note[props.lang]}
-					<div className="modal-bottom">
-						<button className="form-submit modal-close-bottom" onClick={e => toggleModal(false, e)}>{props.lang === "fr" ? "Fermer" : "Close"}</button>
-						{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">{props.lang === "fr" ? "Page du projet" : "Project page"}</a>}
-						{item.url.git && <a className="form-submit modal-preview-bottom" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Page du projet">Github</a>}
-					</div>
+				</div>
+				{item.url.note[props.lang]}
+				<div className="modal-bottom">
+					<button className="form-submit modal-close-bottom" onClick={e => toggleModal(false, e)}>{props.lang === "fr" ? "Fermer" : "Close"}</button>
+					{item.url.preview && <a className="form-submit modal-preview-bottom" href={item.url.preview} target="_blank" rel="noopener noreferrer" title="Page du projet">{props.lang === "fr" ? "Page du projet" : "Project page"}</a>}
+					{item.url.git && <a className="form-submit modal-preview-bottom" href={item.url.git} target="_blank" rel="noopener noreferrer" title="Page du projet">Github</a>}
+				</div>
 			</>,
 			document.getElementById('portal')
 		)

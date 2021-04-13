@@ -535,8 +535,6 @@ a.portfolio-link, .portfolio-link span{
 	background-color: rgba(0, 0, 0, 0.603);
 
 	z-index: 1000;
-
-	
 	overflow-y: scroll;
 	
 	&.transition{
@@ -553,12 +551,15 @@ a.portfolio-link, .portfolio-link span{
 
 		position: relative;
 		background-color: white;
+		border-radius: .5em;
 
-		margin-top: 60px;
-		padding: 20px 40px;
-
+		margin: 20px auto;
+		padding: 50px 20px 20px;
+		
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 		h3{
+			
 			font-size: 2em;
 			text-align: center;
 			margin-bottom: 5px;
@@ -569,17 +570,21 @@ a.portfolio-link, .portfolio-link span{
 			text-align: center;
 		}
 
-		.modal-close{
-			background-color: transparent;
-			border: none;
-			font-size: 3em;
+		.modal-close-container{
 			position: absolute;
 			right: 20px;
 			top: 20px;
-			cursor: pointer;
 
-			&:hover{
-				color: #ff8900;
+			.modal-close{
+				border: none;
+				background-color: transparent;
+	
+				font-size: 3em;
+				cursor: pointer;
+	
+				&:hover{
+					color: #ff8900;
+				}
 			}
 		}
 
