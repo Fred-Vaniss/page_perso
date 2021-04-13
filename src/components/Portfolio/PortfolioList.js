@@ -157,7 +157,7 @@ export const PortfolioList = [
 						<p>Mon projet qui a connu un grand succès sur le Steam Workshop est un addon d'ATH qui reprend d'un jeu vidéo du nom de SYNTHETIK.</p>
 						<p>C'est une interface qui est minimaliste et qui est animée fidèlement.</p>
 						<Gallery src={[
-							{format: "gif", img: "synt/synthud-1", alt:"Animation barre de vie"},
+							{format: "gif", img: "synt/synthud-1", alt:"Animation barre de santé et d'armure"},
 							{format: "gif", img: "synt/synthud-2", alt:"Animation du compteur de munitions"},
 							{format: "jpg", img: "synt/synthud-3", alt:"La communauté Steam a adoré mon addon"}
 						]}/>
@@ -194,9 +194,9 @@ export const PortfolioList = [
 						<p>My project that got a huge success on the Steam Workshop is an animated HUD that is based on a video game called SYNTHETIK</p>
 						<p>It's a minimalistic interface which is faithfully animated.</p>
 						<Gallery src={[
-							{format: "gif", img: "synt/synthud-1", alt:"Animation barre de vie"},
-							{format: "gif", img: "synt/synthud-2", alt:"Animation du compteur de munitions"},
-							{format: "jpg", img: "synt/synthud-3", alt:"La communauté Steam a adoré mon addon"}
+							{format: "gif", img: "synt/synthud-1", alt:"Health and armor bar animation"},
+							{format: "gif", img: "synt/synthud-2", alt:"Ammo count animation"},
+							{format: "jpg", img: "synt/synthud-3", alt:"The Steam community loved my addon"}
 						]}/>
 						<hr></hr>
 						<h3>FPV Drone</h3>
