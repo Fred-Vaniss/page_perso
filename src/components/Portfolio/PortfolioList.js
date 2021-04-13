@@ -40,15 +40,37 @@ export const PortfolioList = [
 					<ul>
 						<li>Février 2021</li>
 						<li>Technologies utilisés: React, SASS</li>
-						<li>Projet terminé en deux journées</li>
+						<li>Projet terminé en cinq jours</li>
 					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "bt-tracker/tracker-1", alt:"Exemple d'utilisation"},
+						{format: "jpg", img: "bt-tracker/tracker-2", alt:"Exemple de différents états"},
+						{format: "jpg", img: "bt-tracker/tracker-3", alt:"Exemple de différents erreurs"},
+					]}/>
 					<p>Je joue beaucoup aux jeux vidéos et il existe un concept qu'on appelle "Battlepass", ou Pass de Combat. C'est un objectif limité dans le temps (généralement trois mois) où on peut gagner des récompenses supplémentaire.</p>
 					<p>Je me suis dis du coup pourquoi ne pas me faire une appli pour avoir un suivi et qui me permettrais de déterminer si je suis dans le temps ou si je suis en retard. C'était aussi le projet idéal pour me remettre dans le bain de React.</p>
 					<p>Cet appli permets de créer plusieurs suivis avec une date de début, une date de fin, une heure, un nombre déterminant l'objectif à atteindre et la quantité que les bouttons + et - incrémentent</p>
-					<p>Les barres de progressions ont une petite barre de temps qui défile de gauche à droite en fonction du temps restant, c'est ce qui détermine si on est en avance ou en retard par rapport au pourcentage de la progression, c'est un concept que Diablo III m'a inspiré.</p>
+					<p>Les barres de progressions ont une petite barre de temps qui défile de gauche à droite en fonction du temps restant, c'est ce qui détermine si on est en avance ou en retard par rapport au pourcentage de la progression, c'est un concept que le jeu Diablo III m'a inspiré.</p>
 					<p>Et pour aller plus loins, j'ai aussi ajouté la possibilité de réorganiser les différents entrées, de les éditer ainsi que de les supprimer.</p>
 				</>,
 				en: <>
+					<h3>Time limited objectives tracker</h3>
+					<h4>Personal project</h4>
+					<ul>
+						<li>February 2021</li>
+						<li>Used technologies: React, SASS</li>
+						<li>Project finished in five days</li>
+					</ul>
+					<Gallery src={[
+						{format: "jpg", img: "bt-tracker/tracker-1", alt:"Usage example"},
+						{format: "jpg", img: "bt-tracker/tracker-2", alt:"Differents states example"},
+						{format: "jpg", img: "bt-tracker/tracker-3", alt:"Differents errors example"},
+					]}/>
+					<p>I play a lot of video games and there's a concept called "Battlepass". This is a time-limited goal (usually three months) where you can earn additional rewards.</p>
+					<p>So I thought why not make myself an app to have a tracking that help me determine if I'm on time or if I'm late. It was also the perfect project to get me back into React.</p>
+					<p>This appo allows to create several trackers with a start date, an end date, a time, a number determining the goal to be reached and the amount that the bouttons + and - increments.</p>
+					<p>The progress bars have a small time bar that moves from left to right depending on the remaining time, that's what determines wether you're ahead or pehind the progress percentage, it's a concept that the game Diablo III inspired me.</p>
+					<p>And to go further, I also added the possibility to rearrange the different entries and edit them and to delete them.</p>
 				</>
 			},
 			git: "https://github.com/Fred-Vaniss/battlepass-tracker",
@@ -159,7 +181,7 @@ export const PortfolioList = [
 					</>,
 				en: <>
 						<h3>Addons for Garry's Mod</h3>
-						<h4>Personnal projects</h4>
+						<h4>Personal projects</h4>
 						<ul>
 							<li>2020 - 2021</li>
 							<li>Used technologies: LUA</li>
