@@ -25,6 +25,112 @@ const Gallery = props =>{
 }
 
 export const PortfolioList = [
+    {
+		title: {
+			fr: "Addons Gmod",
+			en: "Gmod addons"
+		},
+		techno: "LUA, Photoshop",
+		img: "gmod",
+		url: {
+			note: {
+				fr: <>
+						<h3>Addons pour Garry's mod</h3>
+						<h4>Projets personnels</h4>
+						<ul>
+							<li>2020 - 2021</li>
+							<li>Technologies utilisés: LUA</li>
+						</ul>
+						<p>Durant mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en LUA dans le jeu.</p>
+						<p>Les créations peuvent être publiées sur le Steam Workshop où tout le monde peuvent installer les addons créés.</p>
+						<hr></hr>
+						<h3>HEMA HUD</h3>
+						<h4>Affichage tête haute animé</h4>
+                        <p>Cet addon à été créé à la demande d'une personne dont j'ai été rénuméré pour cette tâche. C'est une interface tête haute pour un pack d'addons portant sur une survie d'une apocalypse zombie appelé Hematolysis. Cet ATH à été entièrement conçu par moi-même.</p>
+                        <p>Il comporte un électrocardiogramme en guise d'indicateur de santé comme Resident Evil (animé avec AfterEffect). Le compteur de munitions dans le chargeur affiche des balles individuel dans un conteneur et s'anime quand les balles sont tirés.</p>
+                        <Gallery src={[
+							{format: "jpg", img: "hema/hema-1", alt:"Conception de l'interface"},
+							{format: "gif", img: "hema/hema-2", alt:"Animation de l'electrocardiogramme"},
+							{format: "gif", img: "hema/hema-3", alt:"Animation du chargeur"},
+						]}/>
+						<hr></hr>
+						<h3>SYNTHETIK HUD</h3>
+						<h4>Affichage tête haute animé</h4>
+						<p>Mon projet qui a connu un grand succès sur le Steam Workshop est un addon d'ATH qui reprend d'un jeu vidéo du nom de SYNTHETIK.</p>
+						<p>C'est une interface qui est minimaliste et qui est animée fidèlement.</p>
+						<Gallery src={[
+							{format: "gif", img: "synt/synthud-1", alt:"Animation barre de santé et d'armure"},
+							{format: "gif", img: "synt/synthud-2", alt:"Animation du compteur de munitions"},
+							{format: "jpg", img: "synt/synthud-3", alt:"La communauté Steam a adoré mon addon"}
+						]}/>
+						<hr></hr>
+						<h3>FPV Drone</h3>
+						<h4>Drone FPV pilotable</h4>
+						<p>Mon hobby dans la vie réelle est le pilotage de drone FPV. C'est un drone où il n'y a pas d'assistance de stabilisation, on peut tourner dans tous les axes et on porte un masque dans les yeux qui transmet ce que le drone voit.</p>
+						<p>J'ai développé cet addon qui reproduit à peu près le pilotage d'un vrai drone FPV et où on peut s'amuser dans d'innombrables cartes créées par la communauté Garry's Mod.</p>
+						<p>Ce fut aussi ma toute première entité programmée qui fallait à la fois gérer le côté client et le côté serveur de cet addon.</p>
+						<div className="modal-gallery">
+							<div className="video-wrapper">
+								<iframe width="560" 
+										height="315" 
+										src="https://www.youtube.com/embed/5zpn2cg4Jq8" 
+										frameBorder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowFullScreen="allowfullscreen"
+										title="Vidéo de démonstration du drone FPV"></iframe>
+							</div>
+						</div>
+					</>,
+				en: <>
+						<h3>Addons for Garry's Mod</h3>
+						<h4>Personal projects</h4>
+						<ul>
+							<li>2020 - 2021</li>
+							<li>Used technologies: LUA</li>
+						</ul>
+						<p>During my free time, I develop addons for Garry's Mod. It's both a video game and an artistic tool, it's highly modulable by the possibility to add LUA coded scripts within the game.</p>
+						<p>The creations can be published on the Steam Workshop where everyone can install created addons.</p>
+						<hr></hr>
+                        <h3>HEMA HUD</h3>						
+                        <h4>Animated heads up display</h4>
+                        <p>This addon were commissioned by someone which I got renumerated for this task. It is a heads up display for an addons pack about a zombie apocalypse survival called Hematolysis. This HUD were completely designed by myself.</p>
+                        <p>It features an electrocardigogram as a health indicator like Resident Evil (animated with AfterEffect). The ammo clip counter display individual bullets in a container and animate as bullets are shots.</p>
+                        <Gallery src={[
+							{format: "jpg", img: "hema/hema-1", alt:"Interface concept"},
+							{format: "gif", img: "hema/hema-2", alt:"Electrocardiogram animations"},
+							{format: "gif", img: "hema/hema-3", alt:"Clip animation"},
+						]}/>
+						<hr></hr>
+						<h3>SYNTHETIK HUD</h3>
+						<h4>Animated heads up display</h4>
+						<p>My project that got a huge success on the Steam Workshop is an animated HUD that is based on a video game called SYNTHETIK</p>
+						<p>It's a minimalistic interface which is faithfully animated.</p>
+						<Gallery src={[
+							{format: "gif", img: "synt/synthud-1", alt:"Health and armor bar animation"},
+							{format: "gif", img: "synt/synthud-2", alt:"Ammo count animation"},
+							{format: "jpg", img: "synt/synthud-3", alt:"The Steam community loved my addon"}
+						]}/>
+						<hr></hr>
+						<h3>FPV Drone</h3>
+						<h4>Pilotable FPV drone</h4>
+						<p>My real life hobby is piloting FPV drone. It's a drone where there is no stabilization assist, we can turn in every angle and we wear a mask on the eyes that transmit what the drone sees.</p>
+						<p>I developed this addon that reproduces approximately the piloting of a real FPV drone and where we can enjoy in countless of maps created by the Garry's Mod community.</p>
+						<p>This also was my very first programmed entity where I had to manage the client side and the server side of this addon.</p>
+						<div className="modal-gallery">
+							<div className="video-wrapper">
+								<iframe width="560" 
+										height="315" 
+										src="https://www.youtube.com/embed/5zpn2cg4Jq8" 
+										frameBorder="0" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowFullScreen="allowfullscreen"
+										title="Demo video of my FPV drone"></iframe>
+							</div>
+						</div>
+					</>
+			}
+		}
+	},
 	{
 		title: {
 			fr: "Suivi d'objectifs",
@@ -131,92 +237,6 @@ export const PortfolioList = [
 			},
 			git: "https://github.com/Fred-Vaniss/creative-gh-grav",
 			preview: "https://fred-vaniss.be/grav-site/"
-		}
-	},
-	{
-		title: {
-			fr: "Addons Gmod",
-			en: "Gmod addons"
-		},
-		techno: "LUA",
-		img: "gmod",
-		url: {
-			note: {
-				fr: <>
-						<h3>Addons pour Garry's mod</h3>
-						<h4>Projets personnels</h4>
-						<ul>
-							<li>2020 - 2021</li>
-							<li>Technologies utilisés: LUA</li>
-						</ul>
-						<p>Durant mon temps libre, je développe des addons pour Garry's Mod. C'est à la fois un jeu vidéo et un outil artistique qui est hautement modulable grâce à la possibilité d'implémenter des scripts codés en LUA dans le jeu.</p>
-						<p>Les créations peuvent être publiées sur le Steam Workshop où tout le monde peuvent installer les addons créés.</p>
-						<hr></hr>
-						<h3>SYNTHETIK HUD</h3>
-						<h4>Affichage tête haute animé</h4>
-						<p>Mon projet qui a connu un grand succès sur le Steam Workshop est un addon d'ATH qui reprend d'un jeu vidéo du nom de SYNTHETIK.</p>
-						<p>C'est une interface qui est minimaliste et qui est animée fidèlement.</p>
-						<Gallery src={[
-							{format: "gif", img: "synt/synthud-1", alt:"Animation barre de santé et d'armure"},
-							{format: "gif", img: "synt/synthud-2", alt:"Animation du compteur de munitions"},
-							{format: "jpg", img: "synt/synthud-3", alt:"La communauté Steam a adoré mon addon"}
-						]}/>
-						<hr></hr>
-						<h3>FPV Drone</h3>
-						<h4>Drone FPV pilotable</h4>
-						<p>Mon hobby dans la vie réelle est le pilotage de drone FPV. C'est un drone où il n'y a pas d'assistance de stabilisation, on peut tourner dans tous les axes et on porte un masque dans les yeux qui transmet ce que le drone voit.</p>
-						<p>J'ai développé cet addon qui reproduit à peu près le pilotage d'un vrai drone FPV et où on peut s'amuser dans d'innombrables cartes créées par la communauté Garry's Mod.</p>
-						<p>Ce fut aussi ma toute première entité programmée qui fallait à la fois gérer le côté client et le côté serveur de cet addon.</p>
-						<div className="modal-gallery">
-							<div className="video-wrapper">
-								<iframe width="560" 
-										height="315" 
-										src="https://www.youtube.com/embed/5zpn2cg4Jq8" 
-										frameBorder="0" 
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-										allowFullScreen="allowfullscreen"
-										title="Vidéo de démonstration du drone FPV"></iframe>
-							</div>
-						</div>
-					</>,
-				en: <>
-						<h3>Addons for Garry's Mod</h3>
-						<h4>Personal projects</h4>
-						<ul>
-							<li>2020 - 2021</li>
-							<li>Used technologies: LUA</li>
-						</ul>
-						<p>During my free time, I develop addons for Garry's Mod. It's both a video game and an artistic tool, it's highly modulable by the possibility to add LUA coded scripts within the game.</p>
-						<p>The creations can be published on the Steam Workshop where everyone can install created addons.</p>
-						<hr></hr>
-						<h3>SYNTHETIK HUD</h3>
-						<h4>Animated heads up display</h4>
-						<p>My project that got a huge success on the Steam Workshop is an animated HUD that is based on a video game called SYNTHETIK</p>
-						<p>It's a minimalistic interface which is faithfully animated.</p>
-						<Gallery src={[
-							{format: "gif", img: "synt/synthud-1", alt:"Health and armor bar animation"},
-							{format: "gif", img: "synt/synthud-2", alt:"Ammo count animation"},
-							{format: "jpg", img: "synt/synthud-3", alt:"The Steam community loved my addon"}
-						]}/>
-						<hr></hr>
-						<h3>FPV Drone</h3>
-						<h4>Pilotable FPV drone</h4>
-						<p>My real life hobby is piloting FPV drone. It's a drone where there is no stabilization assist, we can turn in every angle and we wear a mask on the eyes that transmit what the drone sees.</p>
-						<p>I developed this addon that reproduces approximately the piloting of a real FPV drone and where we can enjoy in countless of maps created by the Garry's Mod community.</p>
-						<p>This also was my very first programmed entity where I had to manage the client side and the server side of this addon.</p>
-						<div className="modal-gallery">
-							<div className="video-wrapper">
-								<iframe width="560" 
-										height="315" 
-										src="https://www.youtube.com/embed/5zpn2cg4Jq8" 
-										frameBorder="0" 
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-										allowFullScreen="allowfullscreen"
-										title="Demo video of my FPV drone"></iframe>
-							</div>
-						</div>
-					</>
-			}
 		}
 	},
 	{
