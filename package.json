@@ -9,7 +9,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "aos": "^2.3.4",
-    "immer": "8.0.1",
+    "immer": "9.0.6",
     "lightbox2": "^2.11.1",
     "node-notifier": "8.0.1",
     "node-sass": "^5.0.0",
